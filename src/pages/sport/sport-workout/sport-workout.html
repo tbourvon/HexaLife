@@ -25,7 +25,7 @@
     </ion-header>
 
 
-    <ion-content>
+    <ion-content (swipe)="swipeEvent($event)">
         <div [ngSwitch]="bodyPart">
           <ion-list *ngSwitchCase="'Leg'">
               <button ion-item (click)="SingleLegLift()">
