@@ -16,4 +16,6 @@ export class LegExercise {
     this.navCtrl.push(SimpleLegLift);
   }
 
+  
+
 }
