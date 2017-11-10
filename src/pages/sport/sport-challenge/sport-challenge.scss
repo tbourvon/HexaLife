@@ -23,7 +23,7 @@ page-sport-challenge {
     text-align: center;
   }
 
-  .dateContainer {
+  .sport-date-container {
     text-align: center;
     width: 150px;
     height: 140px;
@@ -33,29 +33,29 @@ page-sport-challenge {
     margin-top: 40px;
   }
 
-  .month {
+  .sport-date-container .month {
     font-size: 28px;
     color: #fff;
     background-color: #DB4F52;
   }
 
-  .day {
+  .sport-date-container .day {
     font-size: 70px;
     margin-top: 7px;
   }
 
-  .advice {
+  .sport-date-container .advice {
     font-size: 28px;
     color: #373E45;
     margin-top: 100px;
   }
 
-  .checkbox-container {
+  .sport-checkbox-container {
     margin-top: 70px;
     display: inline-block;
   }
 
-  .done {
+  .sport-checkbox-container .done {
     display: flex;
     font-size: 18px;
     color: white;
@@ -63,22 +63,22 @@ page-sport-challenge {
     border-radius: 2px;
   }
 
-  .item-md.item-block .item-inner {
+  .sport-checkbox-container .item-md.item-block .item-inner {
     border:none;
   }
 
-  .item.item-md .checkbox-md {
+  .sport-checkbox-container .item.item-md .checkbox-md {
       margin: 9px 15px 9px 4px;
   }
 
-  .checkbox-md .checkbox-checked .checkbox-inner {
+  .sport-checkbox-container .checkbox-md .checkbox-checked .checkbox-inner {
       left: 7px;
       top: 2px;
       width: 7px;
       height: 15px;
   }
 
-  .checkbox-md .checkbox-icon {
+  .sport-checkbox-container .checkbox-md .checkbox-icon {
     border-color: #fff;
     background-color: #F95F62;
     width: 25px;

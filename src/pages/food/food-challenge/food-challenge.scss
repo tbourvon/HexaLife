@@ -23,7 +23,7 @@ page-food-challenge {
     text-align: center;
   }
 
-  .dateContainer {
+  .food-date-container {
     text-align: center;
     width: 150px;
     height: 140px;
@@ -33,13 +33,13 @@ page-food-challenge {
     margin-top: 40px;
   }
 
-  .month {
+  .food-date-container .month {
     font-size: 28px;
     color: #fff;
     background-color: #75CD7E;
   }
 
-  .day {
+  .food-date-container .day {
     font-size: 70px;
     margin-top: 7px;
   }
@@ -50,12 +50,12 @@ page-food-challenge {
     margin-top: 100px;
   }
 
-  .checkbox-container {
+  .food-checkbox-container {
     margin-top: 70px;
     display: inline-block;
   }
 
-  .done {
+  .food-checkbox-container .done {
     display: flex;
     font-size: 18px;
     color: white;
@@ -63,22 +63,22 @@ page-food-challenge {
     border-radius: 2px;
   }
 
-  .item-md.item-block .item-inner {
+  .food-checkbox-container .item-md.item-block .item-inner {
     border:none;
   }
 
-  .item.item-md .checkbox-md {
+  .food-checkbox-container .item.item-md .checkbox-md {
       margin: 9px 15px 9px 4px;
   }
 
-  .checkbox-md .checkbox-checked .checkbox-inner {
+  .food-checkbox-container .checkbox-md .checkbox-checked .checkbox-inner {
       left: 7px;
       top: 2px;
       width: 7px;
       height: 15px;
   }
 
-  .checkbox-md .checkbox-icon {
+  .food-checkbox-container .checkbox-md .checkbox-icon {
     border-color: #fff;
     background-color: #87E990;
     width: 25px;
