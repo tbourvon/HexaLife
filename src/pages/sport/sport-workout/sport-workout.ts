@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { NavController } from 'ionic-angular';
 import { LegExercise } from "../sport-workout-leg/sport-workout-leg"
+import {SimpleLegLift} from '../sport-workout-leg-simpleleglift/sport-workout-leg-simpleleglift';
 
 @Component({
   selector: 'page-sport-workout',
@@ -9,24 +10,10 @@ import { LegExercise } from "../sport-workout-leg/sport-workout-leg"
 export class SportWorkoutPage {
 
   constructor(public navCtrl: NavController) {
-
   }
 
-  items = [
-    'Legs & Buttocks',
-    'Abdos',
-    'Arms',
-    'Shoulders'
-    ];
-
-  itemSelected(item: string) {
-    
-    console.log("Selected Item", item);
-    
-    if(item == "Legs & Buttocks")
-    {
-        this.navCtrl.push(LegExercise);
-    }
+  SingleLegLift(){
+    this.navCtrl.push(SimpleLegLift);
   }
 
 }
