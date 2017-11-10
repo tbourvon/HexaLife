@@ -5,6 +5,7 @@ import { MyApp } from './app.component';
 import { SportPage } from '../pages/sport/sport';
 import { TabsPage } from '../pages/tabs/tabs';
 import { FoodHomePage} from '../pages/food/food-home/food-home';
+import { FoodStartersPage } from '../pages/food/food-starters/food-starters';
 
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
@@ -13,6 +14,7 @@ import { SplashScreen } from '@ionic-native/splash-screen';
   declarations: [
     MyApp,
     FoodHomePage,
+    FoodStartersPage,
     SportPage,
     TabsPage
   ],
@@ -24,6 +26,7 @@ import { SplashScreen } from '@ionic-native/splash-screen';
   entryComponents: [
     MyApp,
     FoodHomePage,
+    FoodStartersPage,
     SportPage,
     TabsPage
   ],
