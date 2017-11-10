@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 
-import { SportPage } from '../sport/sport';
+import { SportHomePage } from '../sport/sport-home/sport-home';
 
 
 @Component({
@@ -8,7 +8,7 @@ import { SportPage } from '../sport/sport';
 })
 export class TabsPage {
 
-  tab1Root = SportPage;
+  tab1Root = SportHomePage;
   /*tab2Root = FoodPage;
   tab3Root = FeedPage;
   tab3Root = ProfilePage;*/

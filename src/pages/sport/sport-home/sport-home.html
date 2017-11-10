@@ -6,17 +6,17 @@
 
 <ion-content class="card-background-page">
 
-  <ion-card>
-    <img src="assets/imgs/sport-dating.jpg"/>
+  <ion-card (click)="sportChallenge()">
+    <img src="assets/imgs/challenge.jpg"/>
     <div class="card-title">Daily Challenge</div>
   </ion-card>
 
-  <ion-card>
-    <img src="assets/imgs/challenge.jpg"/>
+  <ion-card (click)="sportDating()">
+    <img src="assets/imgs/sport-dating.jpg"/>
     <div class="card-title">Sport Dating</div>
   </ion-card>
 
-  <ion-card>
+  <ion-card (click)="sportWorkout()">
     <img src="assets/imgs/exercise.jpg"/>
     <div class="card-title">Workout</div>
   </ion-card>
