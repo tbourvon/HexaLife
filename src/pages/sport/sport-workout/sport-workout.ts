@@ -10,6 +10,8 @@ import {AbdominalHold} from '../sport-workout/sport-exercises/sport-workout-abdo
 })
 export class SportWorkoutPage {
 
+  bodyPart: string;
+
   constructor(public navCtrl: NavController) {
     this.bodyPart="Leg";
   }
@@ -25,7 +27,7 @@ export class SportWorkoutPage {
   swipeEvent($e){
     if($e.direction == 4)
     {
-      this.navCtrl.push(SportHomePage);      
+      this.navCtrl.push(SportHomePage);
     }
   }
 
