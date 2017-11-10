@@ -9,6 +9,7 @@ import { SportDatingPage } from '../pages/sport/sport-dating/sport-dating';
 import { SportWorkoutPage } from '../pages/sport/sport-workout/sport-workout';
 
 import { TabsPage } from '../pages/tabs/tabs';
+import { FoodHomePage} from '../pages/food/food-home/food-home';
 
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
@@ -20,6 +21,7 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     SportChallengePage,
     SportDatingPage,
     SportWorkoutPage,
+    FoodHomePage,
     TabsPage
   ],
   imports: [
@@ -33,6 +35,7 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     SportChallengePage,
     SportDatingPage,
     SportWorkoutPage,
+    FoodHomePage,
     TabsPage
   ],
   providers: [
