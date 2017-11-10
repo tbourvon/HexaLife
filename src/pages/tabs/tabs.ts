@@ -5,6 +5,7 @@ import { FoodHomePage } from '../food/food-home/food-home';
 import { FoodStartersPage } from '../food/food-starters/food-starters';
 
 @Component({
+  selector: 'tabs',
   templateUrl: 'tabs.html'
 })
 export class TabsPage {
