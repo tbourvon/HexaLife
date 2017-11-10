@@ -7,9 +7,12 @@ import { SportHomePage } from '../pages/sport/sport-home/sport-home';
 import { SportChallengePage } from '../pages/sport/sport-challenge/sport-challenge';
 import { SportDatingPage } from '../pages/sport/sport-dating/sport-dating';
 import { SportWorkoutPage } from '../pages/sport/sport-workout/sport-workout';
+import {SimpleLegLift } from '../pages/sport/sport-workout/sport-exercises/sport-workout-leg-simpleleglift/sport-workout-leg-simpleleglift';
+import { AbdominalHold } from '../pages/sport/sport-workout/sport-exercises/sport-workout-abdos-abdominalhold/sport-workout-abdos-abdominalhold';
 
 import { TabsPage } from '../pages/tabs/tabs';
 import { FoodHomePage} from '../pages/food/food-home/food-home';
+import { FoodStartersPage } from '../pages/food/food-starters/food-starters';
 
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
@@ -21,7 +24,10 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     SportChallengePage,
     SportDatingPage,
     SportWorkoutPage,
+    SimpleLegLift,
+    AbdominalHold,
     FoodHomePage,
+    FoodStartersPage,
     TabsPage
   ],
   imports: [
@@ -35,7 +41,10 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     SportChallengePage,
     SportDatingPage,
     SportWorkoutPage,
+    SimpleLegLift,
+    AbdominalHold,
     FoodHomePage,
+    FoodStartersPage,
     TabsPage
   ],
   providers: [

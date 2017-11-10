@@ -1,0 +1,37 @@
+<link href="https://afeld.github.io/emoji-css/emoji.css" rel="stylesheet">
+
+<ion-header>
+  <ion-navbar>
+    <ion-title>Starters</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content class="card-background-page">
+    <ion-list inset>
+      <ion-item class="buttonList" detail-push *ngFor="let item of items; let i = index" (click)="itemSelected(item.title)">
+        {{ item.title }}
+        <ul>
+          <li *ngFor="let emoji of item.emojis" >
+            <i class="{{ emoji }}"></i>
+          </li>
+        </ul>
+
+
+        <button class="buttonInfo" clear color="dark" ion-button icon-only (click)="onInfoClick($event, i)">
+          <ion-icon name="md-information-circle"></ion-icon>
+        </button>
+        <br/>
+        <h2> 
+          <p>{{ item.calories }} kcal </p>
+          <br/>
+          <div *ngIf="item.show">
+            <p><b>Nutrition Informations</b></p>
+            <p>Fat : {{ item.fat }} g</p>
+            <p>Carbs : {{ item.carbs }} g</p>
+            <p>Proteins : {{ item.proteins }} g</p>
+          </div>
+        </h2>
+      </ion-item>
+      <ion-nav id="nav" [root]="startersRoot" #content swipeBackEnabled="true"></ion-nav>
+    </ion-list>
+</ion-content>
