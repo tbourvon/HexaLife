@@ -81,58 +81,115 @@
                   </button>
           </ion-list>
       
-          <ion-list *ngSwitchCase="'kittens'">
-            <ion-item>
-              <ion-thumbnail item-start>
-                <img src="assets/img/thumbnail-kitten-1.jpg">
-              </ion-thumbnail>
-              <h2>Luna</h2>
-            </ion-item>
-            <ion-item>
-              <ion-thumbnail item-start>
-                <img src="assets/img/thumbnail-kitten-3.jpg">
-              </ion-thumbnail>
-              <h2>Milo</h2>
-            </ion-item>
-            <ion-item>
-              <ion-thumbnail item-start>
-                <img src="assets/img/thumbnail-kitten-4.jpg">
-              </ion-thumbnail>
-              <h2>Bandit</h2>
-            </ion-item>
-            <ion-item>
-              <ion-thumbnail item-start>
-                <img src="assets/img/thumbnail-kitten-2.jpg">
-              </ion-thumbnail>
-              <h2>Nala</h2>
-            </ion-item>
-          </ion-list>
+          <ion-list *ngSwitchCase="'Abdos'">
+            <button ion-item (click)="AbdominalHold30()">
+                Abdominal hold
+                <p>30 seconds</p>
+                <ion-note item-end>
+                  <i class="em em-zap"></i>
+                </ion-note>
+              </button>
+              <button ion-item (click)="SideCrunch()">
+                  Side crunch
+                  <p>10 repetitions</p>
+                  <ion-note item-end>
+                    <i class="em em-zap"></i>
+                  </ion-note>
+                </button>
+          
+                <button ion-item (click)="AbdominalHold60()">
+                  Abdominal hold
+                  <p>60 seconds</p>
+                  <ion-note item-end>
+                    <i class="em em-zap"></i>
+                    <i class="em em-zap"></i>                    
+                  </ion-note>
+                </button>
+              
+              <button ion-item (click)="AbdominalHold90()">
+                Abdominal hold
+                <p>90 seconds</p>
+                <ion-note item-end>
+                  <i class="em em-zap"></i>
+                  <i class="em em-zap"></i>
+                  <i class="em em-zap"></i>                  
+                </ion-note>
+              </button>
+        </ion-list>
+        
+        <ion-list *ngSwitchCase="'Arms'">
+          <button ion-item (click)="BenchDips()">
+              Bench Dips
+              <p>8 repetitions</p>
+              <ion-note item-end>
+                <i class="em em-zap"></i>
+              </ion-note>
+            </button>
+            <button ion-item (click)="BarbelCurl()">
+               Barbel Curl
+                <p>10 repetitions</p>
+                <ion-note item-end>
+                  <i class="em em-zap"></i>
+                  <i class="em em-zap"></i>
+                </ion-note>
+              </button>
+        
+              <button ion-item (click)="TricepsPushDown()">
+                Triceps pushdown
+                <p>25 repetitions</p>
+                <ion-note item-end>
+                  <i class="em em-zap"></i>
+                  <i class="em em-zap"></i>                    
+                </ion-note>
+              </button>
+            
+            <button ion-item (click)="ConcentrationCurl()">
+              Concentration Curl
+              <p>12 repetitions</p>
+              <ion-note item-end>
+                <i class="em em-zap"></i>
+                <i class="em em-zap"></i>
+                <i class="em em-zap"></i>                  
+              </ion-note>
+            </button>
+      </ion-list>
+
+
+      <ion-list *ngSwitchCase="'Shoulders'">
+        <button ion-item (click)="OneArmSideLaterals()">
+            One-Arm Side Laterals
+            <p>12 repetitions</p>
+            <ion-note item-end>
+              <i class="em em-zap"></i>
+            </ion-note>
+          </button>
+          <button ion-item (click)="LyingRearDeltRaise()">
+            Lying Rear Delt Raise
+              <p>10 repetitions</p>
+              <ion-note item-end>
+                <i class="em em-zap"></i>
+              </ion-note>
+            </button>
       
-          <ion-list *ngSwitchCase="'ducklings'">
-            <ion-item>
-              <ion-thumbnail item-start>
-                <img src="assets/img/thumbnail-duckling-1.jpg">
-              </ion-thumbnail>
-              <h2>Daffy</h2>
-            </ion-item>
-            <ion-item>
-              <ion-thumbnail item-start>
-                <img src="assets/img/thumbnail-duckling-2.jpg">
-              </ion-thumbnail>
-              <h2>Huey</h2>
-            </ion-item>
-            <ion-item>
-              <ion-thumbnail item-start>
-                <img src="assets/img/thumbnail-duckling-3.jpg">
-              </ion-thumbnail>
-              <h2>Dewey</h2>
-            </ion-item>
-            <ion-item>
-              <ion-thumbnail item-start>
-                <img src="assets/img/thumbnail-duckling-4.jpg">
-              </ion-thumbnail>
-              <h2>Louie</h2>
-            </ion-item>
-          </ion-list>
+            <button ion-item (click)="Pushups()">
+              Pushups
+              <p>20 repetitions</p>
+              <ion-note item-end>
+                <i class="em em-zap"></i>
+                <i class="em em-zap"></i>                    
+              </ion-note>
+            </button>
+          
+          <button ion-item (click)="ReverseFlyes()">
+            Reverse Flyes
+            <p>15 repetitions</p>
+            <ion-note item-end>
+              <i class="em em-zap"></i>
+              <i class="em em-zap"></i>
+              <i class="em em-zap"></i>                  
+            </ion-note>
+          </button>
+    </ion-list>
+    
         </div>
       </ion-content>
