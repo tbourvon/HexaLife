@@ -2,11 +2,9 @@ import { NgModule, ErrorHandler } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { IonicApp, IonicModule, IonicErrorHandler } from 'ionic-angular';
 import { MyApp } from './app.component';
-
-import { AboutPage } from '../pages/about/about';
-import { FoodHomePage } from '../pages/food/food-home/food-home';
-import { HomePage } from '../pages/home/home';
+import { SportPage } from '../pages/sport/sport';
 import { TabsPage } from '../pages/tabs/tabs';
+import { FoodHomePage} from '../pages/food/food-home/food-home';
 
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
@@ -14,9 +12,8 @@ import { SplashScreen } from '@ionic-native/splash-screen';
 @NgModule({
   declarations: [
     MyApp,
-    AboutPage,
     FoodHomePage,
-    HomePage,
+    SportPage,
     TabsPage
   ],
   imports: [
@@ -26,9 +23,8 @@ import { SplashScreen } from '@ionic-native/splash-screen';
   bootstrap: [IonicApp],
   entryComponents: [
     MyApp,
-    AboutPage,
     FoodHomePage,
-    HomePage,
+    SportPage,
     TabsPage
   ],
   providers: [
