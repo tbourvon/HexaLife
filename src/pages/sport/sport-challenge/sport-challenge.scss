@@ -1,8 +1,11 @@
+
+
 page-sport-challenge {
 
 }
 
 .card-background-page {
+
 
   ion-card {
     position: relative;
@@ -43,6 +46,23 @@ page-sport-challenge {
     font-size: 70px;
     margin-top: 7px;
   }
+
+  .advice {
+    font-size: 28px;
+    color: #373E45;
+    margin-top: 100px;
+  }
+
+  .checkbox-md .checkbox-checked {
+      border-color: #DB4F52;
+      //background-color: #F95F62;
+  }
+
+  .done {
+    margin-top: 70px;
+    size:50px;
+  }
+
 
 
 
