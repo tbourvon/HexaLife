@@ -1,0 +1,69 @@
+
+
+page-sport-challenge {
+
+}
+
+.card-background-page {
+
+
+  ion-card {
+    position: relative;
+    text-align: center;
+  }
+
+  .card-title {
+    position: absolute;
+    top: 40%;
+    font-size: 2.0em;
+    width: 100%;
+    font-weight: bold;
+    color: #fff;
+    text-shadow: 0px 0px 8px #333333;
+  }
+
+  .content {
+    text-align: center;
+  }
+
+  .dateContainer {
+    text-align: center;
+    width: 150px;
+    height: 140px;
+    border-style: solid;
+    border-width: 2px;
+    display: inline-block;
+    margin-top: 20px;
+  }
+
+  .month {
+    font-size: 28px;
+    color: #fff;
+    background-color: #DB4F52;
+  }
+
+  .day {
+    font-size: 70px;
+    margin-top: 7px;
+  }
+
+  .advice {
+    font-size: 28px;
+    color: #373E45;
+    margin-top: 100px;
+  }
+
+  .checkbox-md .checkbox-checked {
+      border-color: #DB4F52;
+      //background-color: #F95F62;
+  }
+
+  .done {
+    margin-top: 70px;
+    size:50px;
+  }
+
+
+
+
+}
