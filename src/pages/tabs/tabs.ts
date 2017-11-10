@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 
-import { FoodPage } from '../food/food-home/food-home';
+import { FoodHomePage } from '../food/food-home/food-home';
 import { SportPage } from '../sport/sport';
 
 @Component({
