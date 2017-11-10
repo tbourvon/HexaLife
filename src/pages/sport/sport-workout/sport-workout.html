@@ -4,8 +4,10 @@
   </ion-navbar>
 </ion-header>
 
-<ion-content class="card-background-page">
-
-  
-
+<ion-content>
+  <ion-list>
+    <button ion-item detail-push *ngFor="let item of items" (click)="itemSelected(item)">
+      {{ item }}
+    </button>
+  </ion-list>
 </ion-content>
