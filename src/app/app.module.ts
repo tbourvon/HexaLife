@@ -15,6 +15,9 @@ import { FoodHomePage} from '../pages/food/food-home/food-home';
 import { FoodChallengePage } from '../pages/food/food-challenge/food-challenge';
 import { FoodStartersPage } from '../pages/food/food-starters/food-starters';
 
+import { ProfilePageHome } from '../pages/profile/profile-home/profile-home';
+
+
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 
@@ -30,6 +33,7 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     FoodHomePage,
     FoodChallengePage,
     FoodStartersPage,
+    ProfilePageHome,        
     TabsPage
   ],
   imports: [
@@ -48,6 +52,7 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     FoodHomePage,
     FoodChallengePage,
     FoodStartersPage,
+    ProfilePageHome,        
     TabsPage
   ],
   providers: [
