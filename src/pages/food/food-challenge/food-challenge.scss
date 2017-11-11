@@ -1,7 +1,7 @@
-page-sport-challenge {
+page-food-challenge {
 
   .toolbar-background-md {
-      background: #F95F62;
+      background: #87E990;
   }
 
   .toolbar-title-md {
@@ -13,6 +13,7 @@ page-sport-challenge {
   }
 
 }
+
 
 
 .card-background-page {
@@ -36,7 +37,7 @@ page-sport-challenge {
     text-align: center;
   }
 
-  .sport-date-container {
+  .food-date-container {
     text-align: center;
     width: 150px;
     height: 140px;
@@ -46,54 +47,54 @@ page-sport-challenge {
     margin-top: 40px;
   }
 
-  .sport-date-container .month {
+  .food-date-container .month {
     font-size: 28px;
     color: #fff;
-    background-color: #DB4F52;
+    background-color: #75CD7E;
   }
 
-  .sport-date-container .day {
+  .food-date-container .day {
     font-size: 70px;
     margin-top: 7px;
   }
 
-  .sport-date-container .advice {
+  .advice {
     font-size: 28px;
     color: #373E45;
     margin-top: 100px;
   }
 
-  .sport-checkbox-container {
+  .food-checkbox-container {
     margin-top: 70px;
     display: inline-block;
   }
 
-  .sport-checkbox-container .done {
+  .food-checkbox-container .done {
     display: flex;
     font-size: 18px;
     color: white;
-    background-color: #F95F62;
+    background-color: #87E990;
     border-radius: 2px;
   }
 
-  .sport-checkbox-container .item-md.item-block .item-inner {
+  .food-checkbox-container .item-md.item-block .item-inner {
     border:none;
   }
 
-  .sport-checkbox-container .item.item-md .checkbox-md {
+  .food-checkbox-container .item.item-md .checkbox-md {
       margin: 9px 15px 9px 4px;
   }
 
-  .sport-checkbox-container .checkbox-md .checkbox-checked .checkbox-inner {
+  .food-checkbox-container .checkbox-md .checkbox-checked .checkbox-inner {
       left: 7px;
       top: 2px;
       width: 7px;
       height: 15px;
   }
 
-  .sport-checkbox-container .checkbox-md .checkbox-icon {
+  .food-checkbox-container .checkbox-md .checkbox-icon {
     border-color: #fff;
-    background-color: #F95F62;
+    background-color: #87E990;
     width: 25px;
     height: 25px;
 
