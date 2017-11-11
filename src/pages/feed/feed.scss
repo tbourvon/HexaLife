@@ -1,22 +1,10 @@
-page-food-home {
-
-  .toolbar-background-md {
-      background: #87E990;
-  }
-
-  .toolbar-title-md {
-      color: white;
-  }
-
-  .back-button-icon-md {
-      color: white;
-  }
+page-feed {
 
   .card-background-page {
 
     ion-card {
       position: relative;
-      text-align: center;
+      text-align: left;
     }
 
     .card-title {
@@ -28,7 +16,14 @@ page-food-home {
       color: #fff;
     }
 
-  }
+    .card-subtitle {
+      font-size: 1.0em;
+      position: absolute;
+      top: 52%;
+      width: 100%;
+      color: #fff;
+    }
 
+  }
 
 }

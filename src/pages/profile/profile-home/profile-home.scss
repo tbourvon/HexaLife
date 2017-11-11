@@ -1,50 +1,51 @@
 .profile-page {
-    
+
       .toolbar-background {
         background: #fff;
         border-color: transparent;
       }
-    
+
       .slide-zoom {
         height: 100%;
       }
-    
+
       .profile-name {
-        text-align: right;	
+        text-align: right;
         font-weight: bold;
       }
-    
+
       .avatar {
       //  height: 150%;
        // width: 30%;
         size: 'item-md-avatar-size'
       }
 
-    
+
       b {
         font-weight: 500;
       }
-    
+
       p {
         padding: 0 40px;
         font-size: 14px;
         line-height: 1.5;
         color: #60646B;
-    
+
         b {
           color: #000000;
         }
       }
-    
-    }
-    body {
-      cursor: url('https://ionicframework.com/img/finger.png'), auto;
-    }    
-    p {
-      text-align: center;
-      margin-bottom: 40px !important;
-    }
-    .spinner svg {
-      width: 19% !important;
-      height: 85px !important;
+
+      body {
+        cursor: url('https://ionicframework.com/img/finger.png'), auto;
+      }
+      p {
+        text-align: center;
+        margin-bottom: 40px !important;
+      }
+      .spinner svg {
+        width: 19% !important;
+        height: 85px !important;
+      }
+
     }
