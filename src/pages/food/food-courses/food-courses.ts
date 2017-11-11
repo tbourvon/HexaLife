@@ -1,12 +1,12 @@
 import { Component } from '@angular/core';
 import { NavController } from 'ionic-angular';
-import { FoodCoursesPage } from '../food-courses/food-courses';
+import { FoodDessertsPage } from '../food-desserts/food-desserts';
 
 @Component({
-  selector: 'page-food-starters',
-  templateUrl: 'food-starters.html'
+  selector: 'page-food-courses',
+  templateUrl: 'food-courses.html'
 })
-export class FoodStartersPage {
+export class FoodCoursesPage {
 
 	items = [
     {
@@ -19,42 +19,40 @@ export class FoodStartersPage {
         show: false
     },
     {
-        title: 'Melon and Ham',
-        emojis: ['em em-watermelon', 'em em-watermelon'],
-        calories : 70,
+        title: 'Chicken and Mushrooms',
+        emojis: ['em em-watermelon'],
+        calories : 250,
         fat: 10, 
         carbs: 20,
         proteins: 40, 
         show: false
     },
     {
-        title: 'Quiche',
+        title: 'Bolognese Pasta',
         emojis: ['em em-pizza'],
-        calories : 100,
+        calories : 300,
         fat: 10, 
         carbs: 20,
         proteins: 40, 
         show: false
     },
     {
-        title: 'Pizza',
-        emojis: ['em em-pizza', 'em em-pizza'],
-        calories : 160,
+        title: 'Raclette',
+        emojis: ['em em-pizza', 'em em-pizza', 'em em-pizza'],
+        calories : 1300,
         fat: 10, 
         carbs: 20,
         proteins: 40,
         show: false
     }
-	];
+  ];
 
   constructor(public navCtrl: NavController) {
 
   }
 
   itemSelected(item: string) {
-    console.log("Selected Item", item);
-    this.navCtrl.push(FoodCoursesPage);
-    console.log("ok");
+    this.navCtrl.push(FoodDessertsPage);
   }
 
   public onInfoClick(event, index) {

@@ -13,7 +13,8 @@ import {SimpleLegLift} from '../pages/sport/sport-workout-leg-simpleleglift/spor
 import { TabsPage } from '../pages/tabs/tabs';
 import { FoodHomePage} from '../pages/food/food-home/food-home';
 import { FoodStartersPage } from '../pages/food/food-starters/food-starters';
-
+import { FoodCoursesPage } from '../pages/food/food-courses/food-courses';
+import { FoodDessertsPage } from '../pages/food/food-desserts/food-desserts';
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 
@@ -28,6 +29,8 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     SimpleLegLift,
     FoodHomePage,
     FoodStartersPage,
+    FoodCoursesPage,
+    FoodDessertsPage,
     TabsPage
   ],
   imports: [
@@ -45,6 +48,8 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     SimpleLegLift,
     FoodHomePage,
     FoodStartersPage,
+    FoodCoursesPage,
+    FoodDessertsPage,
     TabsPage
   ],
   providers: [
