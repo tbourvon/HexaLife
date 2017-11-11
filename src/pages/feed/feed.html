@@ -14,9 +14,9 @@
 
     <ion-item>
       <ion-avatar item-start>
-        <img src="../assets/imgs/feed/avatar.png">
+        <img src="../assets/imgs/feed/avatar1.png">
       </ion-avatar>
-      <h2>Marty McFly</h2>
+      <h2>Tom Connor</h2>
       <p>November 5, 2017</p>
     </ion-item>
 
@@ -29,16 +29,54 @@
 
     <ion-row>
       <ion-col>
-        <button ion-button icon-left clear small>
-          <ion-icon name="logo-facebook"></ion-icon>
-        </button>
-        <button ion-button icon-left clear small>
-          <ion-icon name="logo-twitter"></ion-icon>
-        </button>
+        <div class="button-container">
+          <button ion-button icon-left clear small (click)='showConfirm("Facebook")'>
+            <ion-icon name="logo-facebook"></ion-icon>
+          </button>
+          <button ion-button icon-left clear small (click)='showConfirm("Twitter")'>
+            <ion-icon name="logo-twitter"></ion-icon>
+          </button>
+      </div>
       </ion-col>
       <ion-col center text-center>
         <ion-note>
           11h ago
+        </ion-note>
+      </ion-col>
+    </ion-row>
+
+  </ion-card>
+
+  <ion-card>
+
+    <ion-item>
+      <ion-avatar item-start>
+        <img src="../assets/imgs/feed/avatar2.png">
+      </ion-avatar>
+      <h2>Sarah Smith</h2>
+      <p>November 3, 2017</p>
+    </ion-item>
+
+    <img src="../assets/imgs/feed/art2.png">
+
+    <ion-card-content>
+      <p>Consume at least 5 fruits or vegetables a day.</p>
+    </ion-card-content>
+
+    <ion-row>
+      <ion-col>
+        <div class="button-container">
+          <button ion-button icon-left clear small (click)='showConfirm("Facebook")'>
+            <ion-icon name="logo-facebook"></ion-icon>
+          </button>
+          <button ion-button icon-left clear small (click)='showConfirm("Twitter")'>
+            <ion-icon name="logo-twitter"></ion-icon>
+          </button>
+      </div>
+      </ion-col>
+      <ion-col center text-center>
+        <ion-note>
+          2 days ago
         </ion-note>
       </ion-col>
     </ion-row>
