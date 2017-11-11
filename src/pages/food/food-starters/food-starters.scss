@@ -43,7 +43,27 @@ page-food-starters {
       color: #fff;
     }
 
-  }
+    .calories {
+      float : left;
+    }
 
+    .nutritionInfos {
+      float : left;
+      clear : left;
+    }
+    .nutritionInfos p {
+      text-align : left;
+    }
+
+    ul, li {
+      padding: 0;
+      list-style: none;
+    }
+
+    .buttonInfo {
+      float : right;
+    }
+
+  }
 
 }

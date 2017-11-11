@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
-import { NavController } from 'ionic-angular';
+import { NavController, NavParams } from 'ionic-angular';
+import { FoodRecapmenuPage } from '../food-recapmenu/food-recapmenu';
 
 @Component({
   selector: 'page-food-desserts',
@@ -37,11 +38,14 @@ export class FoodDessertsPage {
     }
 	];
 
-  constructor(public navCtrl: NavController) {
+  constructor(public navCtrl: NavController, public navParams: NavParams) {
 
   }
 
   itemSelected(item: string) {
+    this.navCtrl.push(FoodRecapmenuPage, { starters: this.navParams.get("starters"), 
+    courses: this.navParams.get("courses"), 
+    desserts: item });
   }
 
   public onInfoClick(event, index) {

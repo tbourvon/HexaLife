@@ -1,4 +1,17 @@
 page-food-courses {
+
+  .toolbar-background-md {
+      background: #87E990;
+  }
+
+  .toolbar-title-md {
+      color: white;
+  }
+
+  .back-button-icon-md {
+      color: white;
+  }
+
   .card-background-page {
 
     ion-card {
@@ -30,6 +43,28 @@ page-food-courses {
       color: #fff;
     }
 
-  }
+    .calories {
+      float : left;
+    }
+
+    .nutritionInfos {
+      float : left;
+      clear : left;
+    }
+    .nutritionInfos p {
+      text-align : left;
+    }
+
+    ul, li {
+      padding: 0;
+      display : inline;
+    }
+
+    .buttonInfo {
+      float : right;
+    }
+
+}
+
 
 }

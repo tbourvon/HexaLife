@@ -51,10 +51,8 @@ export class FoodStartersPage {
 
   }
 
-  itemSelected(item: string) {
-    console.log("Selected Item", item);
-    this.navCtrl.push(FoodCoursesPage);
-    console.log("ok");
+  itemSelected(item) {
+    this.navCtrl.push(FoodCoursesPage, { starters: item });
   }
 
   public onInfoClick(event, index) {
