@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 
 
 @Component({
+  selector: 'profile-home',
   templateUrl: 'profile-home.html'
 })
 export class ProfilePageHome {
@@ -24,6 +25,8 @@ export class ProfilePageHome {
       description: "Statistics",
     }
   ];
+
+
 }
 
 
