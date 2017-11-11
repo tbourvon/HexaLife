@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { NavController } from 'ionic-angular';
+import { NavController, NavParams } from 'ionic-angular';
 import { FoodDessertsPage } from '../food-desserts/food-desserts';
 
 @Component({
@@ -47,17 +47,18 @@ export class FoodCoursesPage {
     }
   ];
 
-  constructor(public navCtrl: NavController) {
+  constructor(public navCtrl: NavController, public navParams: NavParams) {
 
   }
 
-  itemSelected(item: string) {
-    this.navCtrl.push(FoodDessertsPage);
+  itemSelected(item) {
+    this.navCtrl.push(FoodDessertsPage, { starters: this.navParams.get("starters"), 
+    courses: item });
   }
 
   public onInfoClick(event, index) {
   		event.stopPropagation();
-        this.items[index].show = !this.items[index].show;
+      this.items[index].show = !this.items[index].show;
   }
 
 }

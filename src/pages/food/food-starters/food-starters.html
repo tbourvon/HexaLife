@@ -9,7 +9,7 @@
 <ion-content class="card-background-page">
     <ion-list inset>
       <ion-item class="buttonList" detail-push *ngFor="let item of items; let i = index" (click)="itemSelected(item.title)">
-        {{ item.title }}
+        {{ item.title }} &nbsp;
         <ul>
           <li *ngFor="let emoji of item.emojis" >
             <i class="{{ emoji }}"></i>
@@ -20,13 +20,14 @@
         </button>
         <br/>
         <h2>
-          <p>{{ item.calories }} kcal </p>
-          <br/>
-          <div *ngIf="item.show">
-            <p><b>Nutrition Informations</b></p>
-            <p>Fat : {{ item.fat }} g</p>
-            <p>Carbs : {{ item.carbs }} g</p>
-            <p>Proteins : {{ item.proteins }} g</p>
+          <div class="calories">
+            <p>{{ item.calories }} kcal </p>
+          </div>
+          <div class="nutritionInfos" *ngIf="item.show">
+            <p><b>Nutrition Informations</b>
+            <br/>Fat : {{ item.fat }} g
+            <br/>Carbs : {{ item.carbs }} g
+            <br/>Proteins : {{ item.proteins }} g</p>
           </div>
         </h2>
       </ion-item>

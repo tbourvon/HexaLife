@@ -16,6 +16,7 @@ import { FoodChallengePage } from '../pages/food/food-challenge/food-challenge';
 import { FoodStartersPage } from '../pages/food/food-starters/food-starters';
 import { FoodCoursesPage } from '../pages/food/food-courses/food-courses';
 import { FoodDessertsPage } from '../pages/food/food-desserts/food-desserts';
+import { FoodRecapmenuPage } from '../pages/food/food-recapmenu/food-recapmenu';
 import { ProfilePageHome } from '../pages/profile/profile-home/profile-home';
 
 
@@ -36,6 +37,7 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     FoodStartersPage,
     FoodCoursesPage,
     FoodDessertsPage,
+    FoodRecapmenuPage,
     ProfilePageHome,        
     TabsPage
   ],
@@ -57,6 +59,7 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     FoodStartersPage,
     FoodCoursesPage,
     FoodDessertsPage,
+    FoodRecapmenuPage,
     ProfilePageHome,        
     TabsPage
   ],
