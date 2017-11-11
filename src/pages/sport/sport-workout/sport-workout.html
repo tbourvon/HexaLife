@@ -7,7 +7,7 @@
       </ion-title>
     </ion-navbar>
     <ion-toolbar no-border-top>
-        <ion-segment [(ngModel)]="bodyPart">
+        <ion-segment [(ngModel)]="bodyPart" color="light">
           <ion-segment-button value="Leg">
               Leg
           </ion-segment-button>
@@ -23,7 +23,6 @@
         </ion-segment>
       </ion-toolbar>
     </ion-header>
-
 
     <ion-content (swipe)="swipeEvent($event)">
         <div [ngSwitch]="bodyPart">
