@@ -12,91 +12,91 @@ page-sport-challenge {
       color: white;
   }
 
-}
+  .card-background-page {
 
+    ion-card {
+      position: relative;
+      text-align: center;
+    }
 
-.card-background-page {
+    .card-title {
+      position: absolute;
+      top: 40%;
+      font-size: 2.0em;
+      width: 100%;
+      font-weight: bold;
+      color: #fff;
+      text-shadow: 0px 0px 8px #333333;
+    }
 
-  ion-card {
-    position: relative;
-    text-align: center;
+    .content {
+      text-align: center;
+    }
+
+    .sport-date-container {
+      text-align: center;
+      width: 150px;
+      height: 140px;
+      border-style: solid;
+      border-width: 2px;
+      display: inline-block;
+      margin-top: 40px;
+    }
+
+    .sport-date-container .month {
+      font-size: 28px;
+      color: #fff;
+      background-color: #DB4F52;
+    }
+
+    .sport-date-container .day {
+      font-size: 70px;
+      margin-top: 7px;
+    }
+
+    .advice {
+      font-size: 28px;
+      color: #373E45;
+      margin-top: 100px;
+    }
+
+    .sport-checkbox-container {
+      margin-top: 70px;
+      display: inline-block;
+    }
+
+    .sport-checkbox-container .done {
+      display: flex;
+      font-size: 18px;
+      color: white;
+      background-color: #F95F62;
+      border-radius: 2px;
+    }
+
+    .sport-checkbox-container .item-md.item-block .item-inner {
+      border:none;
+    }
+
+    .sport-checkbox-container .item.item-md .checkbox-md {
+        margin: 9px 15px 9px 4px;
+    }
+
+    .sport-checkbox-container .checkbox-md .checkbox-checked .checkbox-inner {
+        left: 7px;
+        top: 2px;
+        width: 7px;
+        height: 15px;
+    }
+
+    .sport-checkbox-container .checkbox-md .checkbox-icon {
+      border-color: #fff;
+      background-color: #F95F62;
+      width: 25px;
+      height: 25px;
+
+    }
+
   }
 
-  .card-title {
-    position: absolute;
-    top: 40%;
-    font-size: 2.0em;
-    width: 100%;
-    font-weight: bold;
-    color: #fff;
-    text-shadow: 0px 0px 8px #333333;
-  }
-
-  .content {
-    text-align: center;
-  }
-
-  .sport-date-container {
-    text-align: center;
-    width: 150px;
-    height: 140px;
-    border-style: solid;
-    border-width: 2px;
-    display: inline-block;
-    margin-top: 40px;
-  }
-
-  .sport-date-container .month {
-    font-size: 28px;
-    color: #fff;
-    background-color: #DB4F52;
-  }
-
-  .sport-date-container .day {
-    font-size: 70px;
-    margin-top: 7px;
-  }
-
-  .sport-date-container .advice {
-    font-size: 28px;
-    color: #373E45;
-    margin-top: 100px;
-  }
-
-  .sport-checkbox-container {
-    margin-top: 70px;
-    display: inline-block;
-  }
-
-  .sport-checkbox-container .done {
-    display: flex;
-    font-size: 18px;
-    color: white;
-    background-color: #F95F62;
-    border-radius: 2px;
-  }
-
-  .sport-checkbox-container .item-md.item-block .item-inner {
-    border:none;
-  }
-
-  .sport-checkbox-container .item.item-md .checkbox-md {
-      margin: 9px 15px 9px 4px;
-  }
-
-  .sport-checkbox-container .checkbox-md .checkbox-checked .checkbox-inner {
-      left: 7px;
-      top: 2px;
-      width: 7px;
-      height: 15px;
-  }
-
-  .sport-checkbox-container .checkbox-md .checkbox-icon {
-    border-color: #fff;
-    background-color: #F95F62;
-    width: 25px;
-    height: 25px;
-
-  }
 
 }

@@ -12,22 +12,27 @@ page-food-home {
       color: white;
   }
 
-}
+  .card-background-page {
 
-.card-background-page {
+    ion-card {
+      position: relative;
+      text-align: center;
+    }
 
-  ion-card {
-    position: relative;
-    text-align: center;
+    .card-title {
+      position: absolute;
+      top: 36%;
+      font-size: 2.0em;
+      width: 100%;
+      font-weight: bold;
+      color: #fff;
+    }
+
   }
 
-  .card-title {
-    position: absolute;
-    top: 36%;
-    font-size: 2.0em;
-    width: 100%;
-    font-weight: bold;
-    color: #fff;
+  .scroll-content {
+    margin-bottom: 0px !important;
   }
+
 
 }

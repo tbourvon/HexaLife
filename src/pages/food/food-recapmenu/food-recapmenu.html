@@ -1,0 +1,21 @@
+<link href="https://afeld.github.io/emoji-css/emoji.css" rel="stylesheet">
+
+<ion-header>
+  <ion-navbar primary-rose>
+    <ion-title>Save your menu</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content class="card-background-page">
+<div class="recapTitle">
+You took in your menu <br/>
+</div>
+<div class ="recapContent">
+<p>{{ starters }} </p>
+<p>{{ courses }} </p>
+<p>{{ desserts }} </p>
+</div>
+<div text-center>
+  <button ion-button color="secondary" (click)="valider()">Save</button>
+</div>
+</ion-content>

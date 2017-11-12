@@ -1,36 +1,70 @@
 page-food-courses {
 
+  .toolbar-background-md {
+      background: #87E990;
+  }
+
+  .toolbar-title-md {
+      color: white;
+  }
+
+  .back-button-icon-md {
+      color: white;
+  }
+
+  .card-background-page {
+
+    ion-card {
+      position: relative;
+      text-align: center;
+    }
+
+    ul, li {
+      display : inline;
+    }
+
+    .buttonInfo {
+      float : right;
+    }
+    .card-title {
+      position: absolute;
+      top: 36%;
+      font-size: 2.0em;
+      width: 100%;
+      font-weight: bold;
+      color: #fff;
+    }
+
+    .card-subtitle {
+      font-size: 1.0em;
+      position: absolute;
+      top: 52%;
+      width: 100%;
+      color: #fff;
+    }
+
+    .calories {
+      float : left;
+    }
+
+    .nutritionInfos {
+      float : left;
+      clear : left;
+    }
+    .nutritionInfos p {
+      text-align : left;
+    }
+
+    ul, li {
+      padding: 0;
+      display : inline;
+    }
+
+    .buttonInfo {
+      float : right;
+    }
+
 }
 
-.card-background-page {
-
-  ion-card {
-    position: relative;
-    text-align: center;
-  }
-  
-  ul, li {
-    display : inline;
-  } 
-
-  .buttonInfo {
-    float : right;
-  }
-  .card-title {
-    position: absolute;
-    top: 36%;
-    font-size: 2.0em;
-    width: 100%;
-    font-weight: bold;
-    color: #fff;
-  }
-
-  .card-subtitle {
-    font-size: 1.0em;
-    position: absolute;
-    top: 52%;
-    width: 100%;
-    color: #fff;
-  }
 
 }
