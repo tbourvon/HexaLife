@@ -1,194 +1,79 @@
 <link href="https://afeld.github.io/emoji-css/emoji.css" rel="stylesheet">
 
 <ion-header>
-    <ion-navbar no-border-bottom>
-      <ion-title>
-        Workout
-      </ion-title>
-    </ion-navbar>
-    <ion-toolbar no-border-top>
-        <ion-segment [(ngModel)]="bodyPart" color="light">
-          <ion-segment-button value="Leg">
-              Leg
-          </ion-segment-button>
-          <ion-segment-button value="Abdos">
-              Abdos
-          </ion-segment-button>
-          <ion-segment-button value="Arms">
-              Arms
-          </ion-segment-button>
-          <ion-segment-button value="Shoulders">
-              Shoulders
-            </ion-segment-button>
-        </ion-segment>
-      </ion-toolbar>
-    </ion-header>
+  <ion-navbar no-border-bottom>
+    <ion-title>
+      Workout
+    </ion-title>
+  </ion-navbar>
+  <ion-toolbar no-border-top>
+    <ion-segment [(ngModel)]="bodyPart" color="light">
+      <ion-segment-button value="Leg">
+        Leg
+      </ion-segment-button>
+      <ion-segment-button value="Abdos">
+        Abdos
+      </ion-segment-button>
+      <ion-segment-button value="Arms">
+        Arms
+      </ion-segment-button>
+      <ion-segment-button value="Shoulders">
+        Shoulders
+      </ion-segment-button>
+    </ion-segment>
+  </ion-toolbar>
+</ion-header>
 
-    <ion-content (swipe)="swipeEvent($event)">
-        <div [ngSwitch]="bodyPart">
-          <ion-list *ngSwitchCase="'Leg'">
-              <button ion-item (click)="SingleLegLift()">
-                  Single leg lift
-                  <p>30 repetitions</p>
-                  <ion-note item-end>
-                    <i class="em em-zap"></i>
-                  </ion-note>
-                </button>
-                <button ion-item (click)="SideLunge()">
-                    Side lunge
-                    <div class ="soustitre">15 repetitions</div>
-                    <ion-note item-end>
-                      <i class="em em-zap"></i>
-                    </ion-note>
-                  </button>
+<ion-content (swipe)="swipeEvent($event)">
+  <div [ngSwitch]="bodyPart">
 
-                <button ion-item (click)="DoubleLegLift()">
-                  Double leg lift
-                  <div class ="soustitre">20 repetitions</div>
-                  <ion-note item-end>
-                    <i class="em em-zap"></i>
-                    <i class="em em-zap"></i>
-                  </ion-note>
-                </button>
+    <ion-list *ngSwitchCase="'Leg'">
+      <ion-item class="buttonList" detail-push *ngFor="let item of legExerciseList; let i = index" (click)="itemSelected(item.title)">
+        {{ item.title }} &nbsp;
 
-                <button ion-item (click)="SquatJump()">
-                  Squat jump
-                  <div class ="soustitre">10 repetitions</div>
-                  <ion-note item-end>
-                    <i class="em em-zap"></i>
-                    <i class="em em-zap"></i>
-                  </ion-note>
-                </button>
+        <p>{{ item.repetitions }}</p>
+        <ion-note item-end *ngFor="let emoji of item.emojis">
+          <i class="{{ emoji }}"></i>
+        </ion-note>
 
-                <button ion-item (click)="LegPullFront()">
-                  Leg pull front
-                  <div class ="soustitre">20 repetitions</div>
-                  <ion-note item-end>
-                    <i class="em em-zap"></i>
-                    <i class="em em-zap"></i>
-                    <i class="em em-zap"></i>
-                  </ion-note>
-                </button>
-                <button ion-item (click)="ScissorBoxJump()">
-                    Scissor box jump
-                    <div class ="soustitre">20 repetitions</div>
-                    <ion-note item-end>
-                      <i class="em em-zap"></i>
-                      <i class="em em-zap"></i>
-                      <i class="em em-zap"></i>
-                    </ion-note>
-                  </button>
-          </ion-list>
-
-          <ion-list *ngSwitchCase="'Abdos'">
-            <button ion-item (click)="AbdominalHold30()">
-                Abdominal hold
-                <div class ="soustitre">30 seconds</div>
-                <ion-note item-end>
-                  <i class="em em-zap"></i>
-                </ion-note>
-              </button>
-              <button ion-item (click)="SideCrunch()">
-                  Side crunch
-                  <div class ="soustitre">10 repetitions</div>
-                  <ion-note item-end>
-                    <i class="em em-zap"></i>
-                  </ion-note>
-                </button>
-
-                <button ion-item (click)="AbdominalHold60()">
-                  Abdominal hold
-                  <div class ="soustitre">60 seconds</div>
-                  <ion-note item-end>
-                    <i class="em em-zap"></i>
-                    <i class="em em-zap"></i>
-                  </ion-note>
-                </button>
-
-              <button ion-item (click)="AbdominalHold90()">
-                Abdominal hold
-                <div class ="soustitre">90 seconds</div>
-                <ion-note item-end>
-                  <i class="em em-zap"></i>
-                  <i class="em em-zap"></i>
-                  <i class="em em-zap"></i>
-                </ion-note>
-              </button>
-        </ion-list>
-
-        <ion-list *ngSwitchCase="'Arms'">
-          <button ion-item (click)="BenchDips()">
-              Bench Dips
-              <div class ="soustitre">8 repetitions</div>
-              <ion-note item-end>
-                <i class="em em-zap"></i>
-              </ion-note>
-            </button>
-            <button ion-item (click)="BarbelCurl()">
-               Barbel Curl
-                <div class ="soustitre">10 repetitions</div>
-                <ion-note item-end>
-                  <i class="em em-zap"></i>
-                  <i class="em em-zap"></i>
-                </ion-note>
-              </button>
-
-              <button ion-item (click)="TricepsPushDown()">
-                Triceps pushdown
-                <div class ="soustitre">25 repetitions</div>
-                <ion-note item-end>
-                  <i class="em em-zap"></i>
-                  <i class="em em-zap"></i>
-                </ion-note>
-              </button>
-
-            <button ion-item (click)="ConcentrationCurl()">
-              Concentration Curl
-              <div class ="soustitre">12 repetitions</div>
-              <ion-note item-end>
-                <i class="em em-zap"></i>
-                <i class="em em-zap"></i>
-                <i class="em em-zap"></i>
-              </ion-note>
-            </button>
-      </ion-list>
-
-
-      <ion-list *ngSwitchCase="'Shoulders'">
-        <button ion-item (click)="OneArmSideLaterals()">
-            One-Arm Side Laterals
-            <div class ="soustitre">12 repetitions</div>
-            <ion-note item-end>
-              <i class="em em-zap"></i>
-            </ion-note>
-          </button>
-          <button ion-item (click)="LyingRearDeltRaise()">
-            Lying Rear Delt Raise
-              <div class ="soustitre">10 repetitions</div>
-              <ion-note item-end>
-                <i class="em em-zap"></i>
-              </ion-note>
-            </button>
-
-            <button ion-item (click)="Pushups()">
-              Pushups
-              <div class ="soustitre">20 repetitions</div>
-              <ion-note item-end>
-                <i class="em em-zap"></i>
-                <i class="em em-zap"></i>
-              </ion-note>
-            </button>
-
-          <button ion-item (click)="ReverseFlyes()">
-            Reverse Flyes
-            <div class ="soustitre">15 repetitions</div>
-            <ion-note item-end>
-              <i class="em em-zap"></i>
-              <i class="em em-zap"></i>
-              <i class="em em-zap"></i>
-            </ion-note>
-          </button>
+      </ion-item>
     </ion-list>
 
-        </div>
-      </ion-content>
+    <ion-list *ngSwitchCase="'Abdos'">
+      <ion-item class="buttonList" detail-push *ngFor="let item of abdosExercices; let i = index" (click)="itemSelected(item.title)">
+        {{ item.title }} &nbsp;
+
+        <p>{{ item.repetitions }}</p>
+        <ion-note item-end *ngFor="let emoji of item.emojis">
+          <i class="{{ emoji }}"></i>
+        </ion-note>
+
+      </ion-item>
+    </ion-list>
+
+    <ion-list *ngSwitchCase="'Arms'">
+      <ion-item class="buttonList" detail-push *ngFor="let item of armsExercices; let i = index" (click)="itemSelected(item.title)">
+        {{ item.title }} &nbsp;
+
+        <p>{{ item.repetitions }}</p>
+        <ion-note item-end *ngFor="let emoji of item.emojis">
+          <i class="{{ emoji }}"></i>
+        </ion-note>
+
+      </ion-item>
+    </ion-list>
+
+    <ion-list *ngSwitchCase="'Shoulders'">
+      <ion-item class="buttonList" detail-push *ngFor="let item of shouldersExercices; let i = index" (click)="itemSelected(item.title)">
+        {{ item.title }} &nbsp;
+
+        <p>{{ item.repetitions }}</p>
+        <ion-note item-end *ngFor="let emoji of item.emojis">
+          <i class="{{ emoji }}"></i>
+        </ion-note>
+
+      </ion-item>
+    </ion-list>
+
+  </div>
+</ion-content>
