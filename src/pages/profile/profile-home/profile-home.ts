@@ -45,7 +45,7 @@ export class ProfilePageHome {
             "#FF6384",
             "#36A2EB",
             "#FFCE56",
-            "#FF6384",
+            "#36A2EB",
 
           ]
         }]
