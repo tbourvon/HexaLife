@@ -1,9 +1,16 @@
-sport-workout-abdos-abdominalhold {
+page-sport-workout-abdos-abdominalhold {
   .card-background-page {
 
     ion-card {
       position: relative;
       text-align: center;
+
+ 
+  
+    .back-button-icon-md {
+        color: white;
+    }
+  
     }
 
     .card-title {
@@ -17,4 +24,16 @@ sport-workout-abdos-abdominalhold {
     }
 
   }
+
+  .toolbar-background-md {
+    background: #F95F62;
+}
+
+.toolbar-title-md {
+    color: white;
+}
+
+.back-button-icon-md {
+    color: white;
+}
 }
