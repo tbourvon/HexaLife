@@ -9,7 +9,6 @@ import { SportDatingPage } from '../pages/sport/sport-dating/sport-dating';
 import { SportWorkoutPage } from '../pages/sport/sport-workout/sport-workout';
 import { SimpleLegLift } from '../pages/sport/sport-workout/sport-exercises/sport-workout-leg-simpleleglift/sport-workout-leg-simpleleglift';
 import { AbdominalHold } from '../pages/sport/sport-workout/sport-exercises/sport-workout-abdos-abdominalhold/sport-workout-abdos-abdominalhold';
-
 import { TabsPage } from '../pages/tabs/tabs';
 import { FoodHomePage} from '../pages/food/food-home/food-home';
 import { FoodChallengePage } from '../pages/food/food-challenge/food-challenge';
@@ -19,8 +18,7 @@ import { FoodDessertsPage } from '../pages/food/food-desserts/food-desserts';
 import { FoodRecapmenuPage } from '../pages/food/food-recapmenu/food-recapmenu';
 import { ProfilePageHome } from '../pages/profile/profile-home/profile-home';
 import { FeedPage } from '../pages/feed/feed';
-
-
+import { FoodRecipesHomePage } from '../pages/food/food-recipes-home/food-recipes-home';
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 
@@ -41,6 +39,7 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     ProfilePageHome,
     FeedPage,
     FoodRecapmenuPage,
+    FoodRecipesHomePage,
     TabsPage
   ],
   imports: [
@@ -64,6 +63,8 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     ProfilePageHome,
     FeedPage,
     FoodRecapmenuPage,
+ 
+    FoodRecipesHomePage,
     TabsPage
   ],
   providers: [
