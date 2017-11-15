@@ -1,12 +1,10 @@
 <ion-header>
   <ion-navbar primary-rose>
     <ion-title>
-      News feed
+      Feed
     </ion-title>
   </ion-navbar>
 </ion-header>
-
-<ion-content>
 
 <ion-content class="card-background-page">
 
@@ -23,6 +21,9 @@
     <img src="../assets/imgs/feed/art1.png">
 
     <ion-card-content>
+      <div class="titre">
+          Take the stairs today !
+      </div>
       <p>Just two minutes extra stairs climbing a day is enough to stop
       average middle age weight gain.</p>
     </ion-card-content>
@@ -54,13 +55,56 @@
         <img src="../assets/imgs/feed/avatar2.png">
       </ion-avatar>
       <h2>Sarah Smith</h2>
-      <p>November 3, 2017</p>
+      <p>November 4, 2017</p>
     </ion-item>
 
     <img src="../assets/imgs/feed/art2.png">
 
     <ion-card-content>
-      <p>Consume at least 5 fruits or vegetables a day.</p>
+      <div class="titre">
+          Consume at least 5 fruits or vegetables a day.
+      </div>
+      <p>It is even better if you buy seasonal fruits and vegetables.</p>
+    </ion-card-content>
+
+    <ion-row>
+      <ion-col>
+        <div class="button-container">
+          <button ion-button icon-left clear small (click)='showConfirm("Facebook")'>
+            <ion-icon name="logo-facebook"></ion-icon>
+          </button>
+          <button ion-button icon-left clear small (click)='showConfirm("Twitter")'>
+            <ion-icon name="logo-twitter"></ion-icon>
+          </button>
+      </div>
+      </ion-col>
+      <ion-col center text-center>
+        <ion-note>
+          Yesterday
+        </ion-note>
+      </ion-col>
+    </ion-row>
+
+  </ion-card>
+
+
+  <ion-card>
+
+    <ion-item>
+      <ion-avatar item-start>
+        <img src="../assets/imgs/feed/avatar3.jpg">
+      </ion-avatar>
+      <h2>Steve Williams</h2>
+      <p>November 3, 2017</p>
+    </ion-item>
+
+    <img src="../assets/imgs/feed/art3.png">
+
+    <ion-card-content>
+      <div class="titre">
+          The 3 winter moves that build a summer body
+      </div>
+      <p>Put the hard work in now to lighten your load when the sun comes back out</p>
     </ion-card-content>
 
     <ion-row>

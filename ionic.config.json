@@ -2,5 +2,7 @@
   "name": "IHM",
   "app_id": "797fbe9a",
   "type": "ionic-angular",
-  "integrations": {}
+  "integrations": {
+    "cordova": {}
+  }
 }
