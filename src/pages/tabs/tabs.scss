@@ -23,6 +23,7 @@ tabs {
   color: #87E990;
 }
 
+<<<<<<< HEAD
 //Feed icon colors
 
 .tabs-md .tab-button[aria-selected="true"]#tab-t0-2 {
@@ -32,3 +33,19 @@ tabs {
 .tabs-md .tab-button[aria-selected="true"]#tab-t0-2 .tab-button-icon {
   color: #7bc6fc;
 }
+=======
+//profile icon color
+
+.tabs-md .tab-button[aria-selected="true"]#tab-t0-3 {
+  color: rgb(0, 0, 0);
+}
+
+.tabs-md .tab-button[aria-selected="true"]#tab-t0-3 .tab-button-icon {
+  color: rgb(0, 0, 0);
+
+}
+
+.toolbar-background-md {
+  background: rgb(78, 78, 78);
+}
+>>>>>>> aaa151a2ebc05028103fc7cd5d69e6f7df0af239
