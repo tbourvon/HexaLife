@@ -15,7 +15,7 @@ export class FeedPage {
   showConfirm(sn: string) {
     let confirm = this.alertCtrl.create({
       title: 'Connect to ' + sn,
-      message: 'The app would like to access to ' + sn + '. Do you agree?',
+      message: 'The app would like to access ' + sn + '. Do you agree?',
       buttons: [
         {
           text: 'Disagree',

@@ -5,6 +5,7 @@ import { FoodHomePage } from '../food/food-home/food-home';
 import { FoodStartersPage } from '../food/food-starters/food-starters';
 import { ProfilePageHome } from '../profile/profile-home/profile-home';
 import { FeedPage } from '../feed/feed';
+import { ConnexionPage } from '../connexion/connexion';
 
 @Component({
   selector: 'tabs',

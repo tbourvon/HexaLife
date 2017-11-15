@@ -19,6 +19,7 @@ import { FoodDessertsPage } from '../pages/food/food-desserts/food-desserts';
 import { FoodRecapmenuPage } from '../pages/food/food-recapmenu/food-recapmenu';
 import { ProfilePageHome } from '../pages/profile/profile-home/profile-home';
 import { FeedPage } from '../pages/feed/feed';
+import { ConnexionPage } from '../pages/connexion/connexion';
 
 
 import { StatusBar } from '@ionic-native/status-bar';
@@ -41,6 +42,7 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     ProfilePageHome,
     FeedPage,
     FoodRecapmenuPage,
+    ConnexionPage,
     TabsPage
   ],
   imports: [
@@ -64,6 +66,7 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     ProfilePageHome,
     FeedPage,
     FoodRecapmenuPage,
+    ConnexionPage,
     TabsPage
   ],
   providers: [
