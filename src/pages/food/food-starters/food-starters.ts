@@ -1,14 +1,12 @@
 import { Component } from '@angular/core';
 import { NavController } from 'ionic-angular';
-import { FoodHomePage } from '../food-home/food-home';
+import { FoodCoursesPage } from '../food-courses/food-courses';
 
 @Component({
   selector: 'page-food-starters',
   templateUrl: 'food-starters.html'
 })
 export class FoodStartersPage {
-
-	startersRoot = FoodHomePage;
 
 	items = [
     {
@@ -53,8 +51,8 @@ export class FoodStartersPage {
 
   }
 
-  itemSelected(item: string) {
-    console.log("Selected Item", item);
+  itemSelected(item) {
+    this.navCtrl.push(FoodCoursesPage, { starters: item });
   }
 
   public onInfoClick(event, index) {

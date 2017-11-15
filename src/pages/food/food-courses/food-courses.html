@@ -1,8 +1,8 @@
 <link href="https://afeld.github.io/emoji-css/emoji.css" rel="stylesheet">
 
 <ion-header>
-  <ion-navbar primary-rose>
-    <ion-title>Starters</ion-title>
+  <ion-navbar>
+    <ion-title>Main Courses</ion-title>
   </ion-navbar>
 </ion-header>
 
@@ -15,11 +15,13 @@
             <i class="{{ emoji }}"></i>
           </li>
         </ul>
+
+
         <button item-end class="buttonInfo" clear color="dark" ion-button icon-only (click)="onInfoClick($event, i)">
           <ion-icon name="md-information-circle"></ion-icon>
         </button>
         <br/>
-        <h2>
+        <h2> 
           <div class="calories">
             <p>{{ item.calories }} kcal </p>
           </div>

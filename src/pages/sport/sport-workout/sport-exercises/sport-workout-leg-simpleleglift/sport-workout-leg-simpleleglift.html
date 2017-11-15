@@ -4,13 +4,13 @@
   </ion-navbar>
 </ion-header>
 
-<ion-content class="cards-bg">
+<ion-content class="cards-bg" (swipe)="swipeEvent($event)">
     
       <ion-card>
     
         <img src="assets/imgs/double_leg_lift.jpg"/>
     
-        <ion-card-content (swipe)="swipeEvent($event)">
+        <ion-card-content >
           <ion-card-title>
               Simple leg lift
           </ion-card-title>

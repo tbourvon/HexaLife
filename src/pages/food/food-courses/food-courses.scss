@@ -1,4 +1,4 @@
-page-food-starters {
+page-food-courses {
 
   .toolbar-background-md {
       background: #87E990;
@@ -57,13 +57,14 @@ page-food-starters {
 
     ul, li {
       padding: 0;
-      list-style: none;
+      display : inline;
     }
 
     .buttonInfo {
       float : right;
     }
 
-  }
+}
+
 
 }
