@@ -53,11 +53,11 @@
           color: #000000;
         }
       }
-    
-    }
+
+
     body {
       cursor: url('https://ionicframework.com/img/finger.png'), auto;
-    }    
+    }
     p {
       text-align: center;
       margin-bottom: 20px ;
@@ -65,7 +65,7 @@
     .spinner svg {
       width: 19% ;
       height: 85px;
-    } 
+    }
     .scroll-content {
       background-color: map-get($colors, light);
   }
@@ -75,7 +75,7 @@ ion-card-header {
 }
 
 ion-card {
-  position: relative;  
+  position: relative;
 }
 ion-slides{
   height: fit-content;
@@ -88,14 +88,14 @@ ion-slides{
 .container {
   text-align: center;
   width: 350px;
-  height: 150px; 
+  height: 150px;
   size: auto;
   border-style: solid;
   border-width: 4px;
   display: inline-block;
   margin-top: 30px;
   margin-bottom: 30px ;
-  
+
 }
 
 .container .containerHeader {
@@ -126,5 +126,4 @@ ion-slides{
         width: 19% !important;
         height: 85px !important;
       }
-
-    
+}
