@@ -64,6 +64,22 @@ page-food-starters {
       float : right;
     }
 
+    .button-container {
+      float: right;
+      margin-top: 10px;
+      color: #666;
+      font-size: 23px;
+    }
+
+    .button-container .icon-plus {
+      margin-left: 5px;
+      margin-right: 7px;
+    }
+
+    .button-container .icon-minus {
+      margin: 0px;
+    }
+
   }
 
 }

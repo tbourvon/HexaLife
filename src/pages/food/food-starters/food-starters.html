@@ -8,7 +8,39 @@
 
 <ion-content class="card-background-page">
     <ion-list inset>
-      <ion-item class="buttonList" detail-push *ngFor="let item of items; let i = index" (click)="itemSelected(item.title)">
+      <ion-item *ngFor="let item of items; let i = index" (press)="showInfos(item)">
+          <ion-label>
+            <!--<button item-end class="buttonInfo" clear color="dark" ion-button icon-only (click)="onInfoClick($event, i)">
+              <ion-icon name="md-information-circle"></ion-icon>
+            </button>-->
+            {{ item.title }} &nbsp;
+            <ul>
+              <li *ngFor="let emoji of item.emojis" >
+                <i class="{{ emoji }}"></i>
+              </li>
+            </ul>
+            <br/>
+            <h2>
+              <div class="calories">
+                <p>{{ item.calories }} kcal
+                  <br/>Fat : {{ item.fat }} g
+                  <br/>Carbs : {{ item.carbs }} g
+                  <br/>Proteins : {{ item.proteins }} g
+                </p>
+              </div>
+            </h2>
+              <div class="button-container">
+                  <ion-icon class="icon-minus" color="primary-green" name="md-remove-circle" (click)="minus(item)"></ion-icon>
+                  <ion-icon class="icon-plus" color="primary-green" name="md-add-circle" (click)="plus(item)"></ion-icon>
+                  {{item.number}}
+              </div>
+          </ion-label>
+
+        </ion-item>
+
+
+
+      <!--<ion-item class="buttonList" detail-push *ngFor="let item of items; let i = index" (click)="itemSelected(item.title)">
         {{ item.title }} &nbsp;
         <ul>
           <li *ngFor="let emoji of item.emojis" >
@@ -30,6 +62,6 @@
             <br/>Proteins : {{ item.proteins }} g</p>
           </div>
         </h2>
-      </ion-item>
+      </ion-item>-->
     </ion-list>
 </ion-content>
