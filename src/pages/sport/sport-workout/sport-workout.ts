@@ -3,6 +3,8 @@ import { NavController } from 'ionic-angular';
 import { SimpleLegLift } from '../sport-workout/sport-exercises/sport-workout-leg-simpleleglift/sport-workout-leg-simpleleglift';
 import { SportHomePage } from '../sport-home/sport-home';
 import { AbdominalHold } from '../sport-workout/sport-exercises/sport-workout-abdos-abdominalhold/sport-workout-abdos-abdominalhold';
+import { BenchDips } from '../sport-workout/sport-exercises/sport-workout-arms-benchdips/sport-workout-arms-benchdips';
+import { OneArmSideLaterals } from '../sport-workout/sport-exercises/sport-workout-shoulders-onearmsidelaterals/sport-workout-shoulders-onearmsidelaterals';
 
 @Component({
   selector: 'page-sport-workout',
@@ -107,7 +109,7 @@ export class SportWorkoutPage {
 
   shouldersExercices = [
     {
-      title: 'One-Arm Side Laterals',
+      title: 'One Arm Side Laterals',
       emojis: ['em em-zap'],
       repetitions: '12 repetitions',
       show: false
@@ -148,6 +150,14 @@ export class SportWorkoutPage {
     else if(itemTitle == "Abdominal hold - Easy")
     {
       this.navCtrl.push(AbdominalHold);
+    }
+    else if(itemTitle == "Bench Dips")
+    {
+      this.navCtrl.push(BenchDips);
+    }
+    else if(itemTitle == "One Arm Side Laterals")
+    {
+      this.navCtrl.push(OneArmSideLaterals);
     }
   }
 
