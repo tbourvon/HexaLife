@@ -3,6 +3,8 @@ import { NavController } from 'ionic-angular';
 import { SportChallengePage } from '../sport-challenge/sport-challenge';
 import { SportDatingPage } from '../sport-dating/sport-dating';
 import { SportWorkoutPage } from '../sport-workout/sport-workout';
+import { SettingsPage } from '../../settings/settings';
+
 
 @Component({
   selector: 'page-sport-home',
@@ -11,6 +13,10 @@ import { SportWorkoutPage } from '../sport-workout/sport-workout';
 export class SportHomePage {
   constructor(public navCtrl: NavController) {
 
+  }
+
+  pushSettings() {
+    this.navCtrl.push(SettingsPage)
   }
 
   sportChallenge() {

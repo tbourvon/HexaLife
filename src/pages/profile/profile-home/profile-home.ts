@@ -1,7 +1,7 @@
+import { SettingsPage } from '../../settings/settings';
 import { Component, ViewChild } from '@angular/core';
 import { NavController } from 'ionic-angular';
 import { Chart } from 'chart.js';
-
 
 @Component({
   templateUrl: 'profile-home.html'
@@ -15,6 +15,10 @@ export class ProfilePageHome {
 
   doughnutchart;
   constructor(public navCtrl: NavController) { }
+
+  pushSettings() {
+    this.navCtrl.push(SettingsPage)
+  }
 
   doughnutChart: any;
   doughnutChartNutrition: any;

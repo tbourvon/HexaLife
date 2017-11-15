@@ -1,9 +1,9 @@
 <ion-header>
-    <ion-navbar dark-grey>
+    <ion-navbar>
         <ion-title>Profile</ion-title>
         <ion-buttons end>
-                <button ion-button icon-only >
-                    <ion-icon class="icon" name="settings"></ion-icon>
+                <button ion-button icon-only (click)="pushSettings()">
+                        <ion-icon class="icon"  name="settings"></ion-icon>
                 </button>
             </ion-buttons>
     </ion-navbar>
