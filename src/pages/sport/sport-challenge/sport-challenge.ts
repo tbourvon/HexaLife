@@ -26,6 +26,8 @@ export class SportChallengePage {
     "December"
   ];
 
+  done: boolean = false;
+
   constructor(public navCtrl: NavController, public toastCtrl: ToastController) {
     this.day = this.date.getDate();
     this.month = this.months[this.date.getMonth()];
