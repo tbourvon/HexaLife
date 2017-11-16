@@ -1,5 +1,20 @@
 page-food-recipes-home {
+   
 
+  ion-card-content { font-family : Noto Sans; }
+
+  .title {
+    color: gray;
+    font-weight: bold;
+  }
+  .ingredients {
+    float : left;
+  }
+
+  .directions {
+    float : left;
+    clear : left;
+  }
   .toolbar-background-md {
       background: #87E990;
   }
