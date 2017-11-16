@@ -1,0 +1,49 @@
+<ion-header>
+    <ion-navbar>
+        <ion-title>Settings</ion-title>
+    </ion-navbar>
+</ion-header>
+<ion-content>
+    <ion-item>
+        <ion-avatar>
+            <img src="../assets/imgs/avatar.jpg" class="avatar" />
+        </ion-avatar>
+    </ion-item>
+    <ion-list>
+        <ion-item>
+            <ion-label>First Name</ion-label>
+            <ion-input value="Richard "></ion-input>
+        </ion-item>
+        <ion-item>
+            <ion-label>Last Name</ion-label>
+            <ion-input value="Smith "></ion-input>
+        </ion-item>
+
+        <ion-item>
+            <ion-label>Gender</ion-label>
+            <ion-select interface="popover">
+                <ion-option value="m" selected>Male</ion-option>
+                <ion-option value="f">Female</ion-option>
+            </ion-select>
+        </ion-item>
+
+        <ion-item>
+            <ion-label>Level</ion-label>
+            <ion-select interface="popover">
+                <ion-option value="b">Beginner</ion-option>
+                <ion-option value="f">Fit</ion-option>
+                <ion-option value="a" selected>Advanced</ion-option>
+            </ion-select>
+        </ion-item>
+
+        <ion-item>
+            <ion-label>Notifications</ion-label>
+            <ion-toggle checked="true"></ion-toggle>
+        </ion-item>
+
+        <ion-item>
+            <ion-label>Map visibility</ion-label>
+            <ion-toggle checked="false"></ion-toggle>
+        </ion-item>
+    </ion-list>
+</ion-content>
