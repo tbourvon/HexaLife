@@ -4,7 +4,7 @@ import { NavController } from 'ionic-angular';
 import { Chart } from 'chart.js';
 
 @Component({
-  templateUrl: 'profile-home.html'
+  templateUrl: 'profile-home.html',
   selector: 'page-profile-home'
 })
 export class ProfilePageHome {
