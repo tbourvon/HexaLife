@@ -3,17 +3,13 @@
 <ion-header>
   <ion-navbar primary-rose>
     <ion-title>Starters</ion-title>
-    <ion-buttons end>
-      <button ion-button icon-only color="white">
-        Validate
-      </button>
-    </ion-buttons>
   </ion-navbar>
 </ion-header>
 
 <ion-content class="card-background-page">
   <ion-list>
-    <ion-item *ngFor="let item of items; let i = index" (press)="showInfos(item)">
+    <ion-item class="buttonList" detail-push *ngFor="let item of items; let i = index" (click)="itemSelected(item.title)">
+
       <ion-thumbnail item-start>
         <img src="{{item.source}}"/>
       </ion-thumbnail>
@@ -31,22 +27,15 @@
       <br/>
       <h2>
         <div class="calories">
-          <p>{{ item.calories }} kcal
+          Energy : {{ item.calories }} kcal
             <br/>Fat : {{ item.fat }} g
             <br/>Carbs : {{ item.carbs }} g
             <br/>Proteins : {{ item.proteins }} g
-          </p>
+
         </div>
       </h2>
       <div class="button-container">
-        <ion-badge color="secondary">
-<div class="centerInBadge">
-  <ion-icon class="icon-minus" color="primary-green" name="md-remove-circle" (click)="minus(item)"></ion-icon>
-  <ion-icon class="icon-plus" color="primary-green" name="md-add-circle" (click)="plus(item)"></ion-icon>
-    {{item.number}}
-</div>
 
-        </ion-badge>
       </div>
     </ion-label>
 

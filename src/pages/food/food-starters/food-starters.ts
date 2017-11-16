@@ -63,21 +63,4 @@ export class FoodStartersPage {
   itemSelected(item) {
     this.navCtrl.push(FoodCoursesPage, { starters: item });
   }
-
-  public onInfoClick(event, index) {
-  		event.stopPropagation();
-        this.items[index].show = !this.items[index].show;
-  }
-
-  minus(item) {
-    if(item.number > 0) {
-      item.number--;
-    }
-  }
-
-  plus(item) {
-    item.number++;
-  }
-
-
 }
