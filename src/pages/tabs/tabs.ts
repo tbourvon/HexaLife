@@ -1,4 +1,3 @@
-
 import { Component } from '@angular/core';
 import { SportHomePage } from '../sport/sport-home/sport-home';
 import { FoodHomePage } from '../food/food-home/food-home';
@@ -18,5 +17,5 @@ export class TabsPage {
   tab3Root = FeedPage;
   tab4Root = ProfilePageHome;
   constructor(public navCtrl: NavController) {}
-}
 
+}

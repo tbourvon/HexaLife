@@ -18,7 +18,8 @@ export class FoodStartersPage {
         fat: 10,
         carbs: 20,
         proteins: 40,
-        show: false
+        show: false,
+        source: "assets/imgs/food/starters/starter1.jpg"
     },
     {
         title: 'Melon and Ham',
@@ -28,7 +29,8 @@ export class FoodStartersPage {
         fat: 10,
         carbs: 20,
         proteins: 40,
-        show: false
+        show: false,
+        source: "assets/imgs/food/starters/starter2.jpg"
     },
     {
         title: 'Quiche',
@@ -38,7 +40,8 @@ export class FoodStartersPage {
         fat: 10,
         carbs: 20,
         proteins: 40,
-        show: false
+        show: false,
+        source: "assets/imgs/food/starters/starter3.jpg"
     },
     {
         title: 'Pizza',
@@ -48,7 +51,8 @@ export class FoodStartersPage {
         fat: 10,
         carbs: 20,
         proteins: 40,
-        show: false
+        show: false,
+        source: "assets/imgs/food/starters/starter5.jpg"
     }
 	];
 

@@ -1,7 +1,16 @@
 page-food-starters {
 
+  .item-md ion-thumbnail ion-img, .item-md ion-thumbnail img{
+    width: 100px;
+    height: 100px;
+  }
+
   .toolbar-background-md {
       background: #87E990;
+  }
+
+  .compteur{
+    text-align: center;
   }
 
   .toolbar-title-md {
