@@ -3,6 +3,11 @@
 <ion-header>
   <ion-navbar primary-rose>
     <ion-title>Starters</ion-title>
+    <ion-buttons end>
+      <button ion-button icon-only color="white">
+        Validate
+      </button>
+    </ion-buttons>
   </ion-navbar>
 </ion-header>
 
@@ -35,10 +40,12 @@
       </h2>
       <div class="button-container">
         <ion-badge color="secondary">
+<div class="centerInBadge">
+  <ion-icon class="icon-minus" color="primary-green" name="md-remove-circle" (click)="minus(item)"></ion-icon>
+  <ion-icon class="icon-plus" color="primary-green" name="md-add-circle" (click)="plus(item)"></ion-icon>
+    {{item.number}}
+</div>
 
-          <ion-icon class="icon-minus" color="primary-green" name="md-remove-circle" (click)="minus(item)"></ion-icon>
-          <ion-icon class="icon-plus" color="primary-green" name="md-add-circle" (click)="plus(item)"></ion-icon>
-          {{item.number}}
         </ion-badge>
       </div>
     </ion-label>
