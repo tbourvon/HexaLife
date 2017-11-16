@@ -51,9 +51,4 @@ export class FoodDessertsPage {
     desserts: item });
   }
 
-  public onInfoClick(event, index) {
-  		event.stopPropagation();
-        this.items[index].show = !this.items[index].show;
-  }
-
 }

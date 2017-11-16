@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { NavController } from 'ionic-angular';
+import { ToastController } from 'ionic-angular';
 
 @Component({
   selector: 'page-food-challenge',
@@ -10,23 +11,39 @@ export class FoodChallengePage {
   day: any;
   month: any;
 
-  months: any = ["January",
-  "February",
-  "March",
-  "April",
-  "May",
-  "June",
-  "July",
-  "August",
-  "September",
-  "October",
-  "November",
-  "December"
-];
+  months: any = [
+    "January",
+    "February",
+    "March",
+    "April",
+    "May",
+    "June",
+    "July",
+    "August",
+    "September",
+    "October",
+    "November",
+    "December"
+  ];
 
-  constructor(public navCtrl: NavController) {
+  done: boolean = false;
+
+  constructor(public navCtrl: NavController, public toastCtrl: ToastController) {
     this.day = this.date.getDate();
     this.month = this.months[this.date.getMonth()];
+  }
+
+  presentToast() {
+
+    this.done=!this.done;
+
+    if (this.done === true) {
+      let toast = this.toastCtrl.create({
+        message: 'Congratulations! Just 24 more challenges before lvl 29!',
+        duration: 3000
+      });
+      toast.present();
+    }
   }
 
 }

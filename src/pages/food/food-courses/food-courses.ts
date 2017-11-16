@@ -60,9 +60,9 @@ export class FoodCoursesPage {
     courses: item });
   }
 
-  public onInfoClick(event, index) {
+  /*public onInfoClick(event, index) {
   		event.stopPropagation();
       this.items[index].show = !this.items[index].show;
-  }
+  }*/
 
 }

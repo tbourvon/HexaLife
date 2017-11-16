@@ -12,55 +12,82 @@ export class FoodStartersPage {
 	items = [
     {
         title: 'Mixed Salad',
-        number:0,
+        number: 0,
         emojis: ['em em-watermelon', 'em em-watermelon', 'em em-watermelon'],
         calories : 50,
         fat: 10,
         carbs: 20,
         proteins: 40,
         show: false,
-        source: "assets/imgs/food/starters/starter1.jpg"
+        source : "assets/imgs/food/starters/starter1.jpg"
     },
     {
         title: 'Melon and Ham',
-        number:0,
+        number: 0,
         emojis: ['em em-watermelon', 'em em-watermelon'],
         calories : 70,
         fat: 10,
         carbs: 20,
         proteins: 40,
         show: false,
-        source: "assets/imgs/food/starters/starter2.jpg"
+        source : "assets/imgs/food/starters/starter2.jpg"
     },
     {
         title: 'Quiche',
-        number:0,
+        number: 0,
         emojis: ['em em-pizza'],
         calories : 100,
         fat: 10,
         carbs: 20,
         proteins: 40,
         show: false,
-        source: "assets/imgs/food/starters/starter3.jpg"
+        source : "assets/imgs/food/starters/starter3.jpg"
     },
     {
         title: 'Pizza',
-        number:0,
+        number: 0,
         emojis: ['em em-pizza', 'em em-pizza'],
         calories : 160,
         fat: 10,
         carbs: 20,
         proteins: 40,
         show: false,
-        source: "assets/imgs/food/starters/starter5.jpg"
+        source : "assets/imgs/food/starters/starter4.jpg"
     }
 	];
+
+  //selectedStarters = [];
 
   constructor(public navCtrl: NavController, public alertCtrl: AlertController) {
 
   }
 
-  itemSelected(item) {
-    this.navCtrl.push(FoodCoursesPage, { starters: item });
+  itemSelected(item: string) {
+    this.navCtrl.push(FoodCoursesPage, { starters: item});
   }
+
+  /*next() {
+    for (let item in this.items) {
+      if (item.number > 0) {
+        this.selectedStarters.push(item);
+      }
+    }
+    this.navCtrl.push(FoodCoursesPage, { starters: this.selectedStarters });
+  }*/
+
+  /*public onInfoClick(event, index) {
+  		event.stopPropagation();
+        this.items[index].show = !this.items[index].show;
+  }*/
+/*
+  minus(item) {
+    console.log(item);
+
+  }
+
+  plus(item) {
+    item.number++;
+  }
+*/
+
 }
