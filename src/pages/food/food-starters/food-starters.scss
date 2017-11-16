@@ -1,7 +1,21 @@
 page-food-starters {
 
+  .item-md ion-thumbnail ion-img, .item-md ion-thumbnail img{
+    width: 100px;
+    height: 100px;
+  }
+
   .toolbar-background-md {
       background: #87E990;
+  }
+
+  .compteur{
+    text-align: center;
+  }
+
+  .bar-button-md{
+    color: white;
+    font-size: 1.5rem;
   }
 
   .toolbar-title-md {
@@ -10,6 +24,17 @@ page-food-starters {
 
   .back-button-icon-md {
       color: white;
+  }
+
+  .footer{
+    color: white;
+    font-size: 1.5rem;
+    width: 100%;
+    font-weight: bold;
+  }
+
+  ion-badge {
+    font-size: 1.6rem;
   }
 
   .card-background-page {
@@ -45,6 +70,17 @@ page-food-starters {
 
     .calories {
       float : left;
+      margin: 0 0 2px;
+overflow: inherit;
+font-size: 1.4rem;
+line-height: normal;
+text-overflow: inherit;
+color: #666;
+    }
+
+    .txtGras {
+      font-weight: bold;
+      display : inline;
     }
 
     .nutritionInfos {

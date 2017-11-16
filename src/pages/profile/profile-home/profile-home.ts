@@ -1,10 +1,11 @@
+import { SettingsPage } from '../../settings/settings';
 import { Component, ViewChild } from '@angular/core';
 import { NavController } from 'ionic-angular';
 import { Chart } from 'chart.js';
 
-
 @Component({
-  templateUrl: 'profile-home.html'
+  templateUrl: 'profile-home.html',
+  selector: 'page-profile-home'
 })
 export class ProfilePageHome {
   @ViewChild('doughnutCanvas') doughnutCanvas;
@@ -15,6 +16,10 @@ export class ProfilePageHome {
 
   doughnutchart;
   constructor(public navCtrl: NavController) { }
+
+  pushSettings() {
+    this.navCtrl.push(SettingsPage)
+  }
 
   doughnutChart: any;
   doughnutChartNutrition: any;
@@ -41,7 +46,7 @@ export class ProfilePageHome {
             "#FF6384",
             "#36A2EB",
             "#FFCE56",
-            "#FF6384",
+            "#36A2EB",
 
           ]
         }]
@@ -131,5 +136,3 @@ export class ProfilePageHome {
 
 
 }
-
-
