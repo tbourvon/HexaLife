@@ -1,0 +1,97 @@
+<ion-header>
+    <ion-navbar>
+        <ion-title>Profile</ion-title>
+        <ion-buttons end>
+                <button ion-button icon-only (click)="pushSettings()">
+                        <ion-icon class="icon"  name="settings"></ion-icon>
+                </button>
+            </ion-buttons>
+    </ion-navbar>
+</ion-header>
+
+<ion-content class="profile-page">
+    <ion-item>
+        <h2 class="profile-name">Richard Smith</h2>
+        <ion-avatar item-end>
+            <img src="../assets/imgs/index.png" class="avatar" />
+        </ion-avatar>
+    </ion-item>
+
+    <ion-slides pager>
+        <ion-slide>
+            <div class="dailyStats">
+            <h2 class="slide-title">Daily stats</h2>
+            <div class="container">
+                <div class="containerValue">1873</div>
+                <div class="containerHeader">Kcal consumed</div>
+            </div>
+            <div class="container">
+                <div class="containerValue">342</div>
+                <div class="containerHeader">Kcal burned</div>
+            </div>
+
+            <div class="container">
+                <div class="containerValue">4.2</div>
+                <div class="containerHeader">Km walked</div>
+            </div>
+            </div>
+           
+            <h2>Level: 28</h2>
+            <p class="text">You are a veteran. No one can stop you!</p>
+            <div class="badges">
+            <img src="../assets/imgs/badge1.png" />
+            <img src="../assets/imgs/badge2.png" />
+            <img src="../assets/imgs/badge3.png" />
+            </div>
+            <p class="text">You've reached the 400 km bar!</p>
+
+        </ion-slide>
+
+        <ion-slide>
+            <h2 class="slide-title">Workout</h2>
+            <ion-card>
+                <ion-card-header>Ratio of exercises
+                </ion-card-header>
+                <ion-card-content>
+                    <canvas #doughnutCanvas></canvas>
+                </ion-card-content>
+            </ion-card>
+            <ion-card>
+                <ion-card-header>
+                    Kilometers walked
+                </ion-card-header>
+                <ion-card-content>
+                    <div class="chartAreaWrapper">
+                        <canvas #barCanvas></canvas>
+                    </div>
+                </ion-card-content>
+            </ion-card>
+
+        </ion-slide>
+
+        <ion-slide>
+            <h2 class="slide-title">Nutrition</h2>
+            <ion-card>
+                <ion-scroll scrollX="true" scrollY="true">
+                </ion-scroll>
+                <ion-card-header>
+                    Today's intake ratio
+                </ion-card-header>
+                <ion-card-content>
+                    <canvas #doughnutCanvasNutrition></canvas>
+                </ion-card-content>
+            </ion-card>
+
+            <ion-card>
+                <ion-card-header>
+                    Calories consumed the last 7 days
+                </ion-card-header>
+                <ion-card-content>
+                    <div class="chartAreaWrapper">
+                        <canvas #barCanvasNutrition></canvas>
+                    </div>
+                </ion-card-content>
+            </ion-card>
+        </ion-slide>
+    </ion-slides>
+</ion-content>

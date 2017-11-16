@@ -1,0 +1,66 @@
+page-food-courses {
+
+  .toolbar-background-md {
+      background: #87E990;
+  }
+
+  .item-md ion-thumbnail ion-img, .item-md ion-thumbnail img{
+    width: 100px;
+    height: 100px;
+  }
+
+  .toolbar-title-md {
+      color: white;
+  }
+
+  .back-button-icon-md {
+      color: white;
+  }
+  ion-badge {
+    font-size: 1.6rem;
+  }
+
+  .card-background-page {
+
+    ion-card {
+      position: relative;
+      text-align: center;
+    }
+
+
+    .card-title {
+      position: absolute;
+      top: 36%;
+      font-size: 2.0em;
+      width: 100%;
+      font-weight: bold;
+      color: #fff;
+    }
+
+    .card-subtitle {
+      font-size: 1.0em;
+      position: absolute;
+      top: 52%;
+      width: 100%;
+      color: #fff;
+    }
+
+    .calories {
+      float : left;
+      margin: 0 0 2px;
+overflow: inherit;
+font-size: 1.4rem;
+line-height: normal;
+text-overflow: inherit;
+color: #666;
+    }
+
+    ul, li {
+      padding: 0;
+      display : inline;
+    }
+
+}
+
+
+}

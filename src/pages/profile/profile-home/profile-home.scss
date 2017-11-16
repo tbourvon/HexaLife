@@ -1,0 +1,145 @@
+page-profile-home{
+  .toolbar-background-md {
+    background: #FF7F50;
+  }
+
+  .toolbar-title-md {
+    color: white;
+  }
+
+  .back-button-icon-md {
+    color: white;
+  }
+
+  .toolbar-buttons .icon {
+    color:white;
+  }
+
+  .icon{
+      color:white;
+  }
+
+  .profile-page {
+
+        .toolbar-background {
+          background: #fff;
+          border-color: transparent;
+        }
+
+        .slide-zoom {
+          height: 100%;
+        }
+
+        .profile-name {
+          text-align: right;
+          font-weight: bold;
+        }
+        .slide-title {
+          margin-bottom: 25px;
+        }
+        .avatar {
+        //  height: 150%;
+         // width: 30%;
+          size: 'item-md-avatar-size'
+        }
+        .dailyStats{
+          margin-bottom: 60px;
+        }
+        .text {
+          font-size:15px;
+        }
+        .badges img{
+          height: 110px;
+          width:auto;
+          float:center;
+        }
+
+
+        b {
+          font-weight: 500;
+        }
+
+        p {
+          padding: 0 40px;
+          font-size: 14px;
+          line-height: 1.5;
+          color: #60646B;
+
+          b {
+            color: #000000;
+          }
+        }
+
+
+      body {
+        cursor: url('https://ionicframework.com/img/finger.png'), auto;
+      }
+      p {
+        text-align: center;
+        margin-bottom: 20px ;
+      }
+      .spinner svg {
+        width: 19% ;
+        height: 85px;
+      }
+      .scroll-content {
+        background-color: #ffffff;
+    }
+
+  ion-card-header {
+      font-weight: bold;
+  }
+
+  ion-card {
+    position: relative;
+  }
+  ion-slides{
+    height: fit-content;
+  }
+
+  .content {
+    text-align: center;
+  }
+
+  .container {
+    display: inline-block;
+  }
+
+  .container .containerHeader {
+    font-size: 19px;
+  }
+
+  .container .containerHeader2 {
+    font-size: 28px;
+    color: #FF7F50;
+  }
+
+  .container .containerValue {
+    box-shadow: 5px 5px 0px #aaa;
+    color: #FF7F50;
+    font-size: 40px;
+    width: 130px;
+    height: 60px;
+    size: auto;
+    font-weight : bold;
+    border-style: solid;
+    border-width: 4px;
+    margin-bottom: 5px;
+    display: inline-block;
+    border-radius : 90px;
+  }
+
+        body {
+          cursor: url('https://ionicframework.com/img/finger.png'), auto;
+        }
+        p {
+          text-align: center;
+          margin-bottom: 40px !important;
+        }
+        .spinner svg {
+          width: 19% !important;
+          height: 85px !important;
+        }
+  }
+
+}

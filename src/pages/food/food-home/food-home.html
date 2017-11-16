@@ -1,8 +1,13 @@
 <ion-header>
-  <ion-navbar>
+  <ion-navbar primary-rose>
     <ion-title>
-      Contact
+      Food
     </ion-title>
+    <ion-buttons end>
+        <button ion-button icon-only (click)="pushSettings()">
+                <ion-icon class="icon"  name="settings"></ion-icon>
+        </button>
+    </ion-buttons>
   </ion-navbar>
 </ion-header>
 
@@ -10,15 +15,19 @@
 
 <ion-content class="card-background-page">
 
-  <ion-card>
-    <img src="assets/imgs/recipe_ideas.png"/>
+  <ion-card (click)="recipesHome()">
+    <img src="assets/imgs/food/recipe_ideas.png"/>
     <div class="card-title">Recipe Ideas</div>
   </ion-card>
 
-  <ion-card>
-    <img src="img/card-saopaolo.png"/>
-    <div class="card-title">São Paulo</div>
-    <div class="card-subtitle">41 Listings</div>
+  <ion-card (click)="FoodChallenge()">
+    <img src="assets/imgs/food/food-challenge.png"/>
+    <div class="card-title">Daily Challenge</div>
+  </ion-card>
+
+  <ion-card (click)="dailyMenu()">
+    <img src="assets/imgs/food/daily-menu.png"/>
+    <div class="card-title">Daily Menu</div>
   </ion-card>
 
 </ion-content>

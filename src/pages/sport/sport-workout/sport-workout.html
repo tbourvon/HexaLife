@@ -1,11 +1,79 @@
+<link href="https://afeld.github.io/emoji-css/emoji.css" rel="stylesheet">
+
 <ion-header>
-  <ion-navbar>
-    <ion-title>Workout</ion-title>
+  <ion-navbar no-border-bottom>
+    <ion-title>
+      Workout
+    </ion-title>
   </ion-navbar>
+  <ion-toolbar no-border-top>
+    <ion-segment [(ngModel)]="bodyPart" color="light">
+      <ion-segment-button value="Leg">
+        Leg
+      </ion-segment-button>
+      <ion-segment-button value="Abdos">
+        Abdos
+      </ion-segment-button>
+      <ion-segment-button value="Arms">
+        Arms
+      </ion-segment-button>
+      <ion-segment-button value="Shoulders">
+        Shoulders
+      </ion-segment-button>
+    </ion-segment>
+  </ion-toolbar>
 </ion-header>
 
-<ion-content class="card-background-page">
+<ion-content (swipe)="swipeEvent($event)">
+  <div [ngSwitch]="bodyPart">
 
-  
+    <ion-list *ngSwitchCase="'Leg'">
+      <ion-item class="buttonList" detail-push *ngFor="let item of legExerciseList; let i = index" (click)="itemSelected(item.title)">
+        {{ item.title }} &nbsp;
 
+        <p>{{ item.repetitions }}</p>
+        <ion-note item-end *ngFor="let emoji of item.emojis">
+          <i class="{{ emoji }}"></i>
+        </ion-note>
+
+      </ion-item>
+    </ion-list>
+
+    <ion-list *ngSwitchCase="'Abdos'">
+      <ion-item class="buttonList" detail-push *ngFor="let item of abdosExercices; let i = index" (click)="itemSelected(item.title)">
+        {{ item.title }} &nbsp;
+
+        <p>{{ item.repetitions }}</p>
+        <ion-note item-end *ngFor="let emoji of item.emojis">
+          <i class="{{ emoji }}"></i>
+        </ion-note>
+
+      </ion-item>
+    </ion-list>
+
+    <ion-list *ngSwitchCase="'Arms'">
+      <ion-item class="buttonList" detail-push *ngFor="let item of armsExercices; let i = index" (click)="itemSelected(item.title)">
+        {{ item.title }} &nbsp;
+
+        <p>{{ item.repetitions }}</p>
+        <ion-note item-end *ngFor="let emoji of item.emojis">
+          <i class="{{ emoji }}"></i>
+        </ion-note>
+
+      </ion-item>
+    </ion-list>
+
+    <ion-list *ngSwitchCase="'Shoulders'">
+      <ion-item class="buttonList" detail-push *ngFor="let item of shouldersExercices; let i = index" (click)="itemSelected(item.title)">
+        {{ item.title }} &nbsp;
+
+        <p>{{ item.repetitions }}</p>
+        <ion-note item-end *ngFor="let emoji of item.emojis">
+          <i class="{{ emoji }}"></i>
+        </ion-note>
+
+      </ion-item>
+    </ion-list>
+
+  </div>
 </ion-content>
