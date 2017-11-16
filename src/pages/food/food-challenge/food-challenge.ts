@@ -26,17 +26,24 @@ export class FoodChallengePage {
     "December"
   ];
 
+  done: boolean = false;
+
   constructor(public navCtrl: NavController, public toastCtrl: ToastController) {
     this.day = this.date.getDate();
     this.month = this.months[this.date.getMonth()];
   }
 
   presentToast() {
-    let toast = this.toastCtrl.create({
-      message: 'Congratulations! ',
-      duration: 300000
-    });
-    toast.present();
+
+    this.done=!this.done;
+
+    if (this.done === true) {
+      let toast = this.toastCtrl.create({
+        message: 'Congratulations! Just 24 more challenges before lvl 29!',
+        duration: 3000
+      });
+      toast.present();
+    }
   }
 
 }

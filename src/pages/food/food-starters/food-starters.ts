@@ -19,7 +19,7 @@ export class FoodStartersPage {
         carbs: 20,
         proteins: 40,
         show: false,
-        source: "assets/imgs/food/starters/starter1.jpg"
+        source : "assets/imgs/food/starters/starter1.jpg"
     },
     {
         title: 'Melon and Ham',
@@ -30,7 +30,7 @@ export class FoodStartersPage {
         carbs: 20,
         proteins: 40,
         show: false,
-        source: "assets/imgs/food/starters/starter2.jpg"
+        source : "assets/imgs/food/starters/starter2.jpg"
     },
     {
         title: 'Quiche',
@@ -41,7 +41,7 @@ export class FoodStartersPage {
         carbs: 20,
         proteins: 40,
         show: false,
-        source: "assets/imgs/food/starters/starter3.jpg"
+        source : "assets/imgs/food/starters/starter3.jpg"
     },
     {
         title: 'Pizza',
@@ -52,24 +52,42 @@ export class FoodStartersPage {
         carbs: 20,
         proteins: 40,
         show: false,
-        source: "assets/imgs/food/starters/starter5.jpg"
+        source : "assets/imgs/food/starters/starter4.jpg"
     }
 	];
 
-  selectedStarters = [];
+  //selectedStarters = [];
 
   constructor(public navCtrl: NavController, public alertCtrl: AlertController) {
 
   }
 
-  next() {
+  itemSelected(item: string) {
+    this.navCtrl.push(FoodCoursesPage, { starters: item});
+  }
+
+  /*next() {
     for (let item in this.items) {
-      console.log(item);
       if (item.number > 0) {
-        console.log(item);
         this.selectedStarters.push(item);
       }
     }
     this.navCtrl.push(FoodCoursesPage, { starters: this.selectedStarters });
+  }*/
+
+  /*public onInfoClick(event, index) {
+  		event.stopPropagation();
+        this.items[index].show = !this.items[index].show;
+  }*/
+/*
+  minus(item) {
+    console.log(item);
+
   }
+
+  plus(item) {
+    item.number++;
+  }
+*/
+
 }

@@ -22,6 +22,18 @@ tabs {
   color: #87E990;
 }
 
+// Feed icon colors
+
+.tabs-md .tab-button[aria-selected="true"]#tab-t0-2 {
+  color: #5fb5e4;
+}
+
+.tabs-md .tab-button[aria-selected="true"]#tab-t0-2 .tab-button-icon {
+  color: #5fb5e4;
+}
+
+
+
 //profile icon color
 
 .tabs-md .tab-button[aria-selected="true"]#tab-t0-3 {

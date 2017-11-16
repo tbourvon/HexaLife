@@ -1,7 +1,15 @@
 page-feed {
 
   .toolbar-background-md {
-      background: #0080FF;
+      background: #5fb5e4; // bleu plus foncé: #3085b4
+  }
+
+  .toolbar-title-md {
+      color: white;
+  }
+
+  .back-button-icon-md {
+      color: white;
   }
 
   .toolbar-title-md {
@@ -11,7 +19,7 @@ page-feed {
   .icon{
     color: white;
     }
-    
+
   .card-background-page {
 
     ion-card {

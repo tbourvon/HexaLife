@@ -4,12 +4,20 @@ page-food-courses {
       background: #87E990;
   }
 
+  .item-md ion-thumbnail ion-img, .item-md ion-thumbnail img{
+    width: 100px;
+    height: 100px;
+  }
+
   .toolbar-title-md {
       color: white;
   }
 
   .back-button-icon-md {
       color: white;
+  }
+  ion-badge {
+    font-size: 1.6rem;
   }
 
   .card-background-page {
@@ -19,13 +27,7 @@ page-food-courses {
       text-align: center;
     }
 
-    ul, li {
-      display : inline;
-    }
 
-    .buttonInfo {
-      float : right;
-    }
     .card-title {
       position: absolute;
       top: 36%;
@@ -45,23 +47,17 @@ page-food-courses {
 
     .calories {
       float : left;
-    }
-
-    .nutritionInfos {
-      float : left;
-      clear : left;
-    }
-    .nutritionInfos p {
-      text-align : left;
+      margin: 0 0 2px;
+overflow: inherit;
+font-size: 1.4rem;
+line-height: normal;
+text-overflow: inherit;
+color: #666;
     }
 
     ul, li {
       padding: 0;
       display : inline;
-    }
-
-    .buttonInfo {
-      float : right;
     }
 
 }
