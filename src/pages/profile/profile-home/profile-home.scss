@@ -1,6 +1,6 @@
 page-profile-home{
   .toolbar-background-md {
-    background: rgb(78, 78, 78);
+    background: #FF7F50;
   }
 
   .toolbar-title-md {
@@ -34,11 +34,24 @@ page-profile-home{
           text-align: right;
           font-weight: bold;
         }
-
+        .slide-title {
+          margin-bottom: 25px;
+        }
         .avatar {
         //  height: 150%;
          // width: 30%;
           size: 'item-md-avatar-size'
+        }
+        .dailyStats{
+          margin-bottom: 60px;
+        }
+        .text {
+          font-size:15px;
+        }
+        .badges img{
+          height: 110px;
+          width:auto;
+          float:center;
         }
 
 
@@ -70,7 +83,7 @@ page-profile-home{
         height: 85px;
       }
       .scroll-content {
-        background-color: map-get($colors, light);
+        background-color: #ffffff;
     }
 
   ion-card-header {
@@ -89,33 +102,31 @@ page-profile-home{
   }
 
   .container {
-    text-align: center;
-    width: 350px;
-    height: 150px;
-    size: auto;
-    border-style: solid;
-    border-width: 4px;
     display: inline-block;
-    margin-top: 30px;
-    margin-bottom: 30px ;
-
   }
 
   .container .containerHeader {
-    font-size: 28px;
-    color: #fff;
-    background-color: rgb(78, 78, 78);
+    font-size: 19px;
   }
 
   .container .containerHeader2 {
     font-size: 28px;
-    color: #fff;
-    background-color: #F95F62;
+    color: #FF7F50;
   }
 
   .container .containerValue {
-    font-size: 70px;
-    margin-top: 7px;
+    box-shadow: 5px 5px 0px #aaa;
+    color: #FF7F50;
+    font-size: 40px;
+    width: 130px;
+    height: 60px;
+    size: auto;
+    font-weight : bold;
+    border-style: solid;
+    border-width: 4px;
+    margin-bottom: 5px;
+    display: inline-block;
+    border-radius : 90px;
   }
 
         body {
