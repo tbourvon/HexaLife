@@ -10,19 +10,20 @@ export class SportChallengePage {
   day: any;
   month: any;
 
-  months: any = ["January",
-  "February",
-  "March",
-  "April",
-  "May",
-  "June",
-  "July",
-  "August",
-  "September",
-  "October",
-  "November",
-  "December"
-];
+  months: any = [
+    "January",
+    "February",
+    "March",
+    "April",
+    "May",
+    "June",
+    "July",
+    "August",
+    "September",
+    "October",
+    "November",
+    "December"
+  ];
 
   constructor(public navCtrl: NavController) {
     this.day = this.date.getDate();

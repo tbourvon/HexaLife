@@ -12,7 +12,7 @@ export class FoodStartersPage {
 	items = [
     {
         title: 'Mixed Salad',
-        number:0,
+        number: 0,
         emojis: ['em em-watermelon', 'em em-watermelon', 'em em-watermelon'],
         calories : 50,
         fat: 10,
@@ -23,7 +23,7 @@ export class FoodStartersPage {
     },
     {
         title: 'Melon and Ham',
-        number:0,
+        number: 0,
         emojis: ['em em-watermelon', 'em em-watermelon'],
         calories : 70,
         fat: 10,
@@ -34,7 +34,7 @@ export class FoodStartersPage {
     },
     {
         title: 'Quiche',
-        number:0,
+        number: 0,
         emojis: ['em em-pizza'],
         calories : 100,
         fat: 10,
@@ -45,7 +45,7 @@ export class FoodStartersPage {
     },
     {
         title: 'Pizza',
-        number:0,
+        number: 0,
         emojis: ['em em-pizza', 'em em-pizza'],
         calories : 160,
         fat: 10,
@@ -56,11 +56,20 @@ export class FoodStartersPage {
     }
 	];
 
+  selectedStarters = [];
+
   constructor(public navCtrl: NavController, public alertCtrl: AlertController) {
 
   }
 
-  itemSelected(item) {
-    this.navCtrl.push(FoodCoursesPage, { starters: item });
+  next() {
+    for (let item in this.items) {
+      console.log(item);
+      if (item.number > 0) {
+        console.log(item);
+        this.selectedStarters.push(item);
+      }
+    }
+    this.navCtrl.push(FoodCoursesPage, { starters: this.selectedStarters });
   }
 }

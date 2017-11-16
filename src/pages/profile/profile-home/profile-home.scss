@@ -1,5 +1,4 @@
 page-profile-home{
-
   .toolbar-background-md {
     background: rgb(78, 78, 78);
   }
@@ -50,21 +49,20 @@ page-profile-home{
         size: 'item-md-avatar-size'
       }
 
-
-      b {
-        font-weight: 500;
-      }
-
-      p {
-        padding: 0 40px;
-        font-size: 14px;
-        line-height: 1.5;
-        color: #60646B;
-
         b {
-          color: #000000;
+          font-weight: 500;
         }
-      }
+
+        p {
+          padding: 0 40px;
+          font-size: 14px;
+          line-height: 1.5;
+          color: #60646B;
+
+          b {
+            color: #000000;
+          }
+        }
 
 
       body {
@@ -141,5 +139,4 @@ page-profile-home{
         height: 85px !important;
       }
   }
-
 }
