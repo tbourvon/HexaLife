@@ -10,7 +10,7 @@ export class FoodRecapmenuPage {
 
     public starters;
     public courses;
-    public desserts; 
+    public desserts;
 
   constructor(public navCtrl: NavController, public navParams: NavParams, public alertCtrl: AlertController) {
     this.starters = this.navParams.get("starters");

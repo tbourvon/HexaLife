@@ -9,14 +9,6 @@ page-food-starters {
       background: #87E990;
   }
 
-  .compteur{
-    text-align: center;
-  }
-
-  .bar-button-md{
-    color: white;
-    font-size: 1.5rem;
-  }
 
   .toolbar-title-md {
       color: white;
@@ -24,13 +16,6 @@ page-food-starters {
 
   .back-button-icon-md {
       color: white;
-  }
-
-  .footer{
-    color: white;
-    font-size: 1.5rem;
-    width: 100%;
-    font-weight: bold;
   }
 
   ion-badge {
@@ -78,43 +63,12 @@ text-overflow: inherit;
 color: #666;
     }
 
-    .txtGras {
-      font-weight: bold;
-      display : inline;
-    }
-
-    .nutritionInfos {
-      float : left;
-      clear : left;
-    }
-    .nutritionInfos p {
-      text-align : left;
-    }
 
     ul, li {
       padding: 0;
       list-style: none;
     }
 
-    .buttonInfo {
-      float : right;
-    }
-
-    .button-container {
-      float: right;
-      margin-top: 10px;
-      color: #666;
-      font-size: 23px;
-    }
-
-    .button-container .icon-plus {
-      margin-left: 5px;
-      margin-right: 7px;
-    }
-
-    .button-container .icon-minus {
-      margin: 0px;
-    }
 
   }
 
