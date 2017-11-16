@@ -1,40 +1,43 @@
+  page-settings{
 
-.toolbar-background-md {
-    background: rgb(252, 171, 79);
-  }
-  
-  .toolbar-title-md {
-    color: white;
-  }
-  
-  .back-button-icon-md {
-    color: white;
-  }
-  
-  .toolbar-buttons .icon {
-    color:white;
-  }
-  
-  body {
-    cursor: url('https://ionicframework.com/img/finger.png'), auto;
-  }
-  p {
-    text-align: center;
-    margin-bottom: 40px ;
-  }
-  .spinner svg {
-    width: 19% ;
-    height: 85px ;
-  }
-  .avatar {
+  .toolbar-background-md {
+      background: rgb(252, 171, 79);
+    }
+
+    .toolbar-title-md {
+      color: white;
+    }
+
+    .back-button-icon-md {
+      color: white;
+    }
+
+    .toolbar-buttons .icon {
+      color:white;
+    }
+
+    body {
+      cursor: url('https://ionicframework.com/img/finger.png'), auto;
+    }
+    p {
+      text-align: center;
+      margin-bottom: 40px ;
+    }
+    .spinner svg {
+      width: 19% ;
+      height: 85px ;
+    }
+
+    .avatar {
     width: 150px;
     height: auto;
     display: block;
     margin-left: auto;
     margin-right: auto;
-  }
-  .infosUser{
-    font-family: Noto Sans;
-  }
+    }
 
-  
+    .infosUser{
+      font-family: Noto Sans;
+    }
+
+}

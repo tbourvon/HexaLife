@@ -1,40 +1,42 @@
-.toolbar-background-md {
-  background: rgb(78, 78, 78);
-}
+page-profile-home{
 
-.toolbar-title-md {
-  color: white;
-}
+  .toolbar-background-md {
+    background: rgb(78, 78, 78);
+  }
 
-.back-button-icon-md {
-  color: white;
-}
+  .toolbar-title-md {
+    color: white;
+  }
 
-.toolbar-buttons .icon {
-  color:white;
-}
+  .back-button-icon-md {
+    color: white;
+  }
 
-.icon{
+  .toolbar-buttons .icon {
     color:white;
-}
+  }
 
-.profile-page {
-      font-family: Noto Sans;
+  .icon{
+        color:white;
+  }
 
-      .badges{
-        height: 100px;
-        width: auto;
-      }
-      .toolbar-background {
-        background: #fff;
-        border-color: transparent;
-      }
+  .profile-page {
+        font-family: Noto Sans;
 
-      .slide-zoom {
-        height: 100%;
-      }
+        .badges{
+          height: 100px;
+          width: auto;
+        }
+        .toolbar-background {
+          background: #fff;
+          border-color: transparent;
+        }
 
-      .slide-title {
+        .slide-zoom {
+          height: 100%;
+        }
+
+        .slide-title {
         font-size: 40px;
       }
 
@@ -42,7 +44,6 @@
         text-align: right;
         font-weight: bold;
       }
-
       .avatar {
       //  height: 150%;
        // width: 30%;
@@ -66,76 +67,79 @@
       }
 
 
-    body {
-      cursor: url('https://ionicframework.com/img/finger.png'), auto;
-    }
-    p {
-      text-align: center;
-      margin-bottom: 20px ;
-    }
-    .spinner svg {
-      width: 19% ;
-      height: 85px;
-    }
-    .scroll-content {
-      background-color: #ffffff;
-  }
-
-ion-card-header {
-    font-weight: bold;
-}
-
-ion-card {
-  position: relative;
-}
-ion-slides{
-  height: fit-content;
-}
-
-.content {
-  text-align: center;
-}
-
-.container {
-  text-align: center;
-  width: 250px;
-  height: 200px;
-  size: auto;
-  border-style: solid;
-  border-width: 2px;
-  display: inline-block;
-  margin-top: 30px;
-  margin-bottom: 30px ;
-  border-radius: 0px 0px 20px 20px;
-
-}
-
-.container .containerHeader {
-  font-size: 28px;
-  color: #fff;
-  background-color: rgb(78, 78, 78);
-}
-
-.container .containerHeader2 {
-  font-size: 28px;
-  color: #fff;
-  background-color: #F95F62;
-}
-
-.container .containerValue {
-  font-size: 70px;
-  margin-top: 7px;
-}
-
       body {
         cursor: url('https://ionicframework.com/img/finger.png'), auto;
       }
       p {
         text-align: center;
+        margin-bottom: 20px ;
+      }
+      .spinner svg {
+        width: 19% ;
+        height: 85px;
+      }
+      .scroll-content {
+        background-color: #ffffff;
+      }
+
+      ion-card-header {
+          font-weight: bold;
+      }
+
+      ion-card {
+        position: relative;
+      }
+      ion-slides{
+        height: fit-content;
+      }
+
+      .content {
+        text-align: center;
+      }
+
+      .container {
+        text-align: center;
+        width: 250px;
+        height: 200px;
+        size: auto;
+        border-style: solid;
+        border-width: 2px;
+        display: inline-block;
+        margin-top: 30px;
+        margin-bottom: 30px ;
+        border-radius: 0px 0px 20px 20px;
+      }
+
+      .container .containerHeader {
+        font-size: 28px;
+        color: #fff;
+        background-color: rgb(78, 78, 78);
+      }
+
+      .container .containerHeader2 {
+        font-size: 28px;
+        color: #fff;
+        background-color: #F95F62;
+      }
+
+      .container .containerValue {
+        font-size: 70px;
+        margin-top: 7px;
+      }
+
+      body {
+        cursor: url('https://ionicframework.com/img/finger.png'), auto;
+      }
+
+      p {
+        text-align: center;
         margin-bottom: 40px !important;
       }
+      
       .spinner svg {
         width: 19% !important;
         height: 85px !important;
       }
+  }
+
 }
