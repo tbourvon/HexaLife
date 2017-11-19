@@ -53,7 +53,7 @@ export class SportDatingPage {
     });
 
     let infoWindow = new google.maps.InfoWindow({
-      content: name
+      content: name + "<br />Click to chat"
     });
 
     infoWindow.open(this.map, marker);
