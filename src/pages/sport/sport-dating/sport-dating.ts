@@ -35,6 +35,8 @@ export class SportDatingPage {
            }
       
            this.map = new google.maps.Map(this.mapElement.nativeElement, mapOptions);
+
+           this.addPerson('Jean-Pierre');
       
          }, (err) => {
            console.log(err);
@@ -63,7 +65,7 @@ export class SportDatingPage {
    addInfoWindow(marker, name){
 
      google.maps.event.addListener(marker, 'click', () => {
-       this.navCtrl.push(SportDatingChatPage, {toUserId: '210000198410281948', toUserName: 'Hancock'});
+       this.navCtrl.push(SportDatingChatPage, {toUserId: '210000198410281948', toUserName: 'Jean-Pierre'});
      });
     
    }
