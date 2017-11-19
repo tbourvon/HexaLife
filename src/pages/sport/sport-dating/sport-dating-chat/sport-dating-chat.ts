@@ -1,5 +1,5 @@
 import { Component, ViewChild } from '@angular/core';
-import { IonicPage, NavParams } from 'ionic-angular';
+import { NavParams } from 'ionic-angular';
 import { Events, Content, TextInput } from 'ionic-angular';
 import { ChatService, ChatMessage, UserInfo } from "../../../../providers/chat-service";
 
@@ -102,6 +102,7 @@ export class SportDatingChatPage {
 
         this.pushNewMsg(newMsg);
         this.editorMsg = '';
+        this.messageInput.value = '';
 
         if (!this.showEmojiPicker) {
             this.messageInput.setFocus();
