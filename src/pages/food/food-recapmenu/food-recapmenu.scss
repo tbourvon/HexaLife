@@ -16,16 +16,33 @@ page-food-recapmenu {
 
 .card-background-page {
   .recapTitle {
-    font-size: 26px;
+    font-size: 32px;
     color: #373E45;
     text-align : center;
     margin-top: 20px;
+    font-weight: bold;
   }
 
   .recapContent {
-    font-size: 18px;
+    font-size: 20px;
     color: #373E45;
-    text-align : center;
-    margin-top: 15px;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 40px;
+  }
+
+  .nutrition-informations p{
+    font-size: 18px;
+    margin: 5px;
+  }
+
+  .nutrition-title {
+    font-weight: bold;
+    margin-top: 50px;
+    margin-bottom: 20px;
+  }
+
+  .menu p {
+    font-size: 24px;
   }
 }

@@ -57,7 +57,25 @@ export class FoodStartersPage {
   }
 
   itemSelected(item: string) {
-    this.navCtrl.push(FoodCoursesPage, { starters: item });
+    var calories;
+    var carbs;
+    var fat;
+    var proteins;
+    for (let itemSelected of this.items) {
+      if (itemSelected.title == item) {
+        calories = itemSelected.calories;
+        carbs = itemSelected.carbs;
+        fat = itemSelected.fat;
+        proteins = itemSelected.proteins;
+      }
+    }
+    this.navCtrl.push(FoodCoursesPage, {
+      starters: item,
+      calories: calories,
+      carbs: carbs,
+      fat: fat,
+      proteins: proteins
+    });
   }
 
 }

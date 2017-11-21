@@ -42,13 +42,31 @@ export class FoodDessertsPage {
 	];
 
   constructor(public navCtrl: NavController, public navParams: NavParams) {
-
+    this.navParams = navParams;
   }
 
   itemSelected(item: string) {
-    this.navCtrl.push(FoodRecapmenuPage, { starters: this.navParams.get("starters"),
-    courses: this.navParams.get("courses"),
-    desserts: item });
+    var calories;
+    var carbs;
+    var fat;
+    var proteins;
+    for (let itemSelected of this.items) {
+      if (itemSelected.title == item) {
+        calories = itemSelected.calories;
+        carbs = itemSelected.carbs;
+        fat = itemSelected.fat;
+        proteins = itemSelected.proteins;
+      }
+    }
+    this.navCtrl.push(FoodRecapmenuPage,   {
+        starters: this.navParams.get("starters"),
+        courses: this.navParams.get("courses"),
+        desserts: item,
+        calories: (this.navParams.get("calories") + calories),
+        carbs: (this.navParams.get("carbs") + carbs),
+        fat: (this.navParams.get("fat") + fat),
+        proteins: (this.navParams.get("proteins") + proteins)
+      });
   }
 
 }

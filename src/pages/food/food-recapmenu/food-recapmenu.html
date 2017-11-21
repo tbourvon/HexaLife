@@ -8,14 +8,26 @@
 
 <ion-content class="card-background-page">
 <div class="recapTitle">
-You took in your menu <br/>
+Your menu <br/>
 </div>
 <div class ="recapContent">
-<p>{{ starters }} </p>
-<p>{{ courses }} </p>
-<p>{{ desserts }} </p>
+  <div class="menu">
+    <p>{{ starters }} </p>
+    <p>{{ courses }} </p>
+    <p>{{ desserts }} </p>
+  </div>
+
+  <div class="nutrition-title">
+    Nutrition informations :<br/>
+  </div>
+  <div class="nutrition-informations">
+    <p>Calories : {{ calories }} kcal</p>
+    <p>Carbs : {{ carbs }} g</p>
+    <p>Proteins : {{ proteins }} g</p>
+    <p>Fat : {{ fat }} g</p>
+  </div>
 </div>
 <div text-center>
-  <button ion-button color="secondary" (click)="valider()">Save</button>
+  <button ion-button style="background-color:#75CD7E;" (click)="valider()">Save</button>
 </div>
 </ion-content>

@@ -12,7 +12,7 @@ export class FoodCoursesPage {
     {
         title: 'Mixed Salad',
         emojis: ['em em-watermelon', 'em em-watermelon', 'em em-watermelon'],
-        calories : 50,
+        calories : 150,
         fat: 10,
         carbs: 20,
         proteins: 40,
@@ -56,13 +56,26 @@ export class FoodCoursesPage {
   }
 
   itemSelected(item) {
-    this.navCtrl.push(FoodDessertsPage, { starters: this.navParams.get("starters"),
-    courses: item });
+    var calories;
+    var carbs;
+    var fat;
+    var proteins;
+    for (let itemSelected of this.items) {
+      if (itemSelected.title == item) {
+        calories = itemSelected.calories;
+        carbs = itemSelected.carbs;
+        fat = itemSelected.fat;
+        proteins = itemSelected.proteins;
+      }
+    }
+    this.navCtrl.push(FoodDessertsPage, {
+      starters: this.navParams.get("starters"),
+      courses: item,
+      calories: (this.navParams.get("calories") + calories),
+      carbs: (this.navParams.get("carbs") + carbs),
+      fat: (this.navParams.get("fat") + fat),
+      proteins: (this.navParams.get("proteins") + proteins)
+    });
   }
-
-  /*public onInfoClick(event, index) {
-  		event.stopPropagation();
-      this.items[index].show = !this.items[index].show;
-  }*/
 
 }
