@@ -17,7 +17,8 @@ export class FoodStartersPage {
         fat: 10,
         carbs: 20,
         proteins: 40,
-        show: false
+        show: false,
+        source : "assets/imgs/food/starters/starter1.jpg"
     },
     {
         title: 'Melon and Ham',
@@ -26,7 +27,8 @@ export class FoodStartersPage {
         fat: 10,
         carbs: 20,
         proteins: 40,
-        show: false
+        show: false,
+        source : "assets/imgs/food/starters/starter2.jpg"
     },
     {
         title: 'Quiche',
@@ -35,7 +37,8 @@ export class FoodStartersPage {
         fat: 10,
         carbs: 20,
         proteins: 40,
-        show: false
+        show: false,
+        source : "assets/imgs/food/starters/starter3.jpg"
     },
     {
         title: 'Pizza',
@@ -44,33 +47,17 @@ export class FoodStartersPage {
         fat: 10,
         carbs: 20,
         proteins: 40,
-        show: false
+        show: false,
+        source : "assets/imgs/food/starters/starter4.jpg"
     }
 	];
-
-  selectedStarters = [];
 
   constructor(public navCtrl: NavController, public alertCtrl: AlertController) {
 
   }
 
-  next() {
+  itemSelected(item: string) {
     this.navCtrl.push(FoodCoursesPage, { starters: this.selectedStarters });
   }
-
-  public onInfoClick(event, index) {
-  		event.stopPropagation();
-        this.items[index].show = !this.items[index].show;
-  }
-
-  minus(item) {
-    console.log(item);
-
-  }
-
-  plus(item) {
-    item.number++;
-  }
-
 
 }

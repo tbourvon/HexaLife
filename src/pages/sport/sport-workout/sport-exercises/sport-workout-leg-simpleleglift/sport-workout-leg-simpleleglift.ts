@@ -13,10 +13,10 @@ export class SimpleLegLift {
   }
 
   swipeEvent($e){
-    if($e.direction == 4)
+    /*if($e.direction == 4)
     {
-      this.navCtrl.push(SportHomePage);      
-    }
+      this.navCtrl.push(SportHomePage);
+    }*/
   }
 
 }

@@ -162,9 +162,9 @@ export class SportWorkoutPage {
   }
 
   swipeEvent($e) {
-    if ($e.direction == 4) {
+  /*  if ($e.direction == 4) {
       this.navCtrl.push(SportHomePage);
-    }
+    }*/
   }
 
 }

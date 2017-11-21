@@ -1,6 +1,6 @@
 page-settings{
   .toolbar-background-md {
-      background: rgb(252, 171, 79);
+      background: rgb(78, 78, 78);
     }
 
     .toolbar-title-md {
@@ -26,6 +26,10 @@ page-settings{
       width: 19% ;
       height: 85px ;
     }
-
+    .avatar {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+    }
 
 }
