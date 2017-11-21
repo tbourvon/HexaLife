@@ -5,6 +5,7 @@ page-profile-home{
 
   .toolbar-title-md {
     color: white;
+    display: flex;
   }
 
   .back-button-icon-md {
@@ -37,11 +38,7 @@ page-profile-home{
         .slide-title {
           margin-bottom: 25px;
         }
-        .avatar {
-        //  height: 150%;
-         // width: 30%;
-          size: 'item-md-avatar-size'
-        }
+
         .dailyStats{
           margin-bottom: 60px;
         }
@@ -49,9 +46,10 @@ page-profile-home{
           font-size:15px;
         }
         .badges img{
-          height: 110px;
+          height: 70px;
           width:auto;
           float:center;
+          margin: 5px;
         }
 
 
@@ -117,9 +115,9 @@ page-profile-home{
   .container .containerValue {
     box-shadow: 5px 5px 0px #aaa;
     color: #FF7F50;
-    font-size: 40px;
-    width: 130px;
-    height: 60px;
+    font-size: 33px;
+    width: 107px;
+    height: 50px;
     size: auto;
     font-weight : bold;
     border-style: solid;
@@ -134,12 +132,30 @@ page-profile-home{
         }
         p {
           text-align: center;
-          margin-bottom: 40px !important;
         }
         .spinner svg {
           width: 19% !important;
           height: 85px !important;
         }
   }
+
+  canvas {
+    height: 144px !important;
+  }
+
+  .swiper-pagination {
+    bottom: 0px !important;
+  }
+
+  .name {
+    margin-left: 10px;
+    line-height: 2;
+  }
+
+  .avatar {
+    height: 40px;
+    width: 40px;
+  }
+
 
 }
