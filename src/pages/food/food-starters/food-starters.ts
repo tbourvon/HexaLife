@@ -57,7 +57,7 @@ export class FoodStartersPage {
   }
 
   itemSelected(item: string) {
-    this.navCtrl.push(FoodCoursesPage, { starters: this.selectedStarters });
+    this.navCtrl.push(FoodCoursesPage, { starters: item });
   }
 
 }
