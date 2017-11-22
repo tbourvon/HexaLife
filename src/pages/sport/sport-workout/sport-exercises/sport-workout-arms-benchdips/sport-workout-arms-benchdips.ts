@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { NavController } from 'ionic-angular';
 import {SportHomePage} from '../../../sport-home/sport-home';
+import { ToastController } from 'ionic-angular';
 
 @Component({
   selector: 'page-sport-workout-arms-benchdips',
@@ -9,15 +10,19 @@ import {SportHomePage} from '../../../sport-home/sport-home';
 
 export class BenchDips {
 
-  constructor(public navCtrl: NavController) {
+  constructor(public navCtrl: NavController,  public toastCtrl: ToastController) {
 
   }
 
-  swipeEvent($e){
-    /*if($e.direction == 4)
-    {
-      this.navCtrl.push(SportHomePage);
-    }*/
+  valider() {
+    this.done=!this.done;
+    if (this.done === true) {
+      let toast = this.toastCtrl.create({
+        message: 'Congratulations! Your arms are in fire !',
+        duration: 3000
+      });
+      toast.present();
+    }
   }
 
 }
