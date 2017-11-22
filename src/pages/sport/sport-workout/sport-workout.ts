@@ -137,7 +137,7 @@ export class SportWorkoutPage {
 
 
   constructor(public navCtrl: NavController) {
-    this.bodyPart = "Leg";
+    this.bodyPart = "Legs";
   }
 
 

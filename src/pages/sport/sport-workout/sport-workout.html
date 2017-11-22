@@ -8,8 +8,8 @@
   </ion-navbar>
   <ion-toolbar no-border-top>
     <ion-segment [(ngModel)]="bodyPart" color="light">
-      <ion-segment-button value="Leg">
-        Leg
+      <ion-segment-button value="Legs">
+        Legs
       </ion-segment-button>
       <ion-segment-button value="Abdos">
         Abdos
@@ -27,7 +27,7 @@
 <ion-content (swipe)="swipeEvent($event)">
   <div [ngSwitch]="bodyPart">
 
-    <ion-list *ngSwitchCase="'Leg'">
+    <ion-list *ngSwitchCase="'Legs'">
       <ion-item class="buttonList" detail-push *ngFor="let item of legExerciseList; let i = index" (click)="itemSelected(item.title)">
         {{ item.title }} &nbsp;
 
