@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { NavController } from 'ionic-angular';
 import {SportHomePage} from '../../../sport-home/sport-home';
-jimport { ToastController } from 'ionic-angular';
+import { ToastController } from 'ionic-angular';
 
 @Component({
   selector: 'page-sport-workout-shoulders-onearmsidelaterals',
@@ -13,7 +13,7 @@ export class OneArmSideLaterals {
   constructor(public navCtrl: NavController,  public toastCtrl: ToastController) {
 
   }
-
+  done: boolean = false;
     valider() {
     this.done=!this.done;
     if (this.done === true) {

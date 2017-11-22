@@ -14,6 +14,7 @@ export class AbdominalHold {
   constructor(public navCtrl: NavController, public toastCtrl: ToastController) {
 
   }
+  done: boolean = false;
 
   valider() {
 

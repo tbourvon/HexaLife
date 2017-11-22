@@ -32,7 +32,7 @@ export class ChatService {
             messageId: Date.now().toString(),
             userId: '210000198410281948',
             userName: 'Jean-Pierre',
-            userAvatar: './assets/to-user.jpg',
+            userAvatar: './assets/imgs/index2.png',
             toUserId: '140000198202211138',
             time: Date.now(),
             message: msg.message,
@@ -61,7 +61,7 @@ export class ChatService {
         const userInfo: UserInfo = {
             id: '140000198202211138',
             name: 'Moi',
-            avatar: './assets/user.jpg'
+            avatar: './assets/imgs/index.png'
         };
         return new Promise(resolve => resolve(userInfo));
     }

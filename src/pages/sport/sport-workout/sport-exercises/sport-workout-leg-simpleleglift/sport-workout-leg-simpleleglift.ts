@@ -12,6 +12,7 @@ export class SimpleLegLift {
   constructor(public navCtrl: NavController,  public toastCtrl: ToastController) {
 
   }
+  done: boolean = false;
 
     valider() {
     this.done=!this.done;

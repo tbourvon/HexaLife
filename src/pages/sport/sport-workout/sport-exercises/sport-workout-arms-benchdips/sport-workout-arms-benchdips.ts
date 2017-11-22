@@ -13,6 +13,7 @@ export class BenchDips {
   constructor(public navCtrl: NavController,  public toastCtrl: ToastController) {
 
   }
+  done: boolean = false;
 
   valider() {
     this.done=!this.done;
