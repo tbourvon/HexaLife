@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { NavController, NavParams, AlertController } from 'ionic-angular';
 import { FoodHomePage } from '../food-home/food-home';
+import { ToastController } from 'ionic-angular';
 
 @Component({
   selector: 'page-food-recapmenu',
@@ -16,7 +17,7 @@ export class FoodRecapmenuPage {
     fat: any;
     proteins: any;
 
-  constructor(public navCtrl: NavController, public navParams: NavParams, public alertCtrl: AlertController) {
+  constructor(public navCtrl: NavController, public navParams: NavParams, public toastCtrl: ToastController) {
     this.starters = this.navParams.get("starters");
     this.courses = this.navParams.get("courses");
     this.desserts = this.navParams.get("desserts");
@@ -26,13 +27,16 @@ export class FoodRecapmenuPage {
     this.proteins = this.navParams.get("proteins");
   }
 
-  valider() {
-    let alert = this.alertCtrl.create({
-      subTitle: 'Menu saved successfully!',
-      buttons: ['OK']
-    });
-    alert.present();
+  done: boolean = false;
+    valider() {
+    this.done=!this.done;
+    if (this.done === true) {
+      let toast = this.toastCtrl.create({
+        message: 'Your menu has been saved successfully !',
+        duration: 3000
+      });
+      toast.present();
+    }
     this.navCtrl.push(FoodHomePage);
   }
-
 }
