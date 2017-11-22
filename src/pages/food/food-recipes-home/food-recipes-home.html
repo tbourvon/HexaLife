@@ -1,31 +1,4 @@
-<!--<ion-header>
-  <ion-navbar primary-rose>
-    <ion-title>
-      Nutrition
-    </ion-title>
-  </ion-navbar>
-</ion-header>
 
-<ion-content>
-
-<ion-content class="card-background-page">
-  <ion-card (click)="recipesIdeas()">
-    <img src="assets/imgs/veggie-food.jpg"/>
-    <div class="card-title">Veggie</div>
-
-  </ion-card>
-
-  <ion-card (click)="Sportive()">
-    <img src="assets/imgs/sport-food.jpg"/>
-    <div class="card-title">Sport</div>
-  </ion-card>
-
-  <ion-card (click)="Healthy()">
-    <img src="assets/imgs/healthy-food.jpg"/>
-    <div class="card-title">Healthy</div>
-  </ion-card>
-
-</ion-content>-->
 <link href="https://afeld.github.io/emoji-css/emoji.css" rel="stylesheet">
 
 <ion-header>
@@ -39,10 +12,10 @@
       <ion-segment-button value="Healthy">
         Healthy
       </ion-segment-button>
-      <ion-segment-button value="Veggie">
+      <ion-segment-button value="Sport">
         Veggie
       </ion-segment-button>
-      <ion-segment-button value="Sport">
+      <ion-segment-button value="Veggie">
         Sport
       </ion-segment-button>
     </ion-segment>
@@ -84,5 +57,115 @@
             
           </ion-card-content>  
           </ion-card>
+
+          <ion-card *ngSwitchCase="'Sport'">
+              
+                      <img src="assets/imgs/quinoa.jpg"/>
+                      <ion-card-content >
+                          <ion-card-title>
+                              <b>Quinoa Bowl</b>
+                          </ion-card-title>
+                      
+                            <h2 class="title">Ingredients</h2>
+                            
+                            <br\>
+                            3/4 cups water <br>
+                            1 cup uncooked quinoa <br>
+                            1/2 cup coarsely chopped seeded tomato <br>
+                            1/2 cup chopped fresh mint or parsley <br>
+                            1/4 cup raisins 1/4 cup chopped cucumber <br>
+                            1/4 cup fresh lemon juice <br>
+                            2 tablespoons chopped green onions <br>
+                            1 tablespoon extra-virgin olive oil <br>
+                            2 teaspoons minced fresh onion <br>
+                            1/2 teaspoon salt 1/4 teaspoon freshly ground black pepper<br>
+              
+                            <br\>
+                            <h2 class="title">Directions</h2>
+                            * Combine water and quinoa in a medium saucepan; bring to a boil. <br>
+                            * Cover, reduce heat, and simmer 20 minutes or until liquid is absorbed. <br>
+                            * Remove from heat; fluff with a fork. <br>
+                            * Stir in tomato and remaining ingredients. <br>
+                            * Cover; let stand 1 hour. <br>
+                            * Serve chilled or at room temperature. <br>
+              
+                          
+                        </ion-card-content>  
+                        </ion-card>
+                        <ion-card *ngSwitchCase="'Sport'">
+              
+                      <img src="assets/imgs/quinoa.jpg"/>
+                      <ion-card-content >
+                          <ion-card-title>
+                              <b>Quinoa Bowl</b>
+                          </ion-card-title>
+                      
+                            <h2 class="title">Ingredients</h2>
+                            
+                            <br\>
+                            3/4 cups water <br>
+                            1 cup uncooked quinoa <br>
+                            1/2 cup coarsely chopped seeded tomato <br>
+                            1/2 cup chopped fresh mint or parsley <br>
+                            1/4 cup raisins 1/4 cup chopped cucumber <br>
+                            1/4 cup fresh lemon juice <br>
+                            2 tablespoons chopped green onions <br>
+                            1 tablespoon extra-virgin olive oil <br>
+                            2 teaspoons minced fresh onion <br>
+                            1/2 teaspoon salt 1/4 teaspoon freshly ground black pepper<br>
+              
+                            <br\>
+                            <h2 class="title">Directions</h2>
+                            * Combine water and quinoa in a medium saucepan; bring to a boil. <br>
+                            * Cover, reduce heat, and simmer 20 minutes or until liquid is absorbed. <br>
+                            * Remove from heat; fluff with a fork. <br>
+                            * Stir in tomato and remaining ingredients. <br>
+                            * Cover; let stand 1 hour. <br>
+                            * Serve chilled or at room temperature. <br>
+              
+                          
+                        </ion-card-content>  
+                        </ion-card>
+
+                        <ion-card *ngSwitchCase="'Veggie'">
+                            
+                                    <img src="assets/imgs/greanbean.jpg"/>
+                                    <ion-card-content >
+                                        <ion-card-title>
+                                            <b>Grean Bean Bowl</b>
+                                        </ion-card-title>
+                                    
+                                          <h2 class="title">Ingredients</h2>
+                                          
+                                          <br\>
+                                          Kosher salt<br>
+                                          1 pound slender green beans, ends trimmed<br>
+                                          1 cup feta cheese crumbles<br>
+                                          1 cup cherry tomatoes, sliced in half<br>
+                                          2 tablespoons chopped red onion<br>
+                                          1/2 cup slivered almonds<br>
+                                          3 tablespoons olive oil<br>
+                                          2 tablespoons red wine vinegar<br>
+                                          2 tablespoons chopped fresh basil<br>
+                                          1 large clove garlic, minced<br>
+                                          Freshly ground black pepper<br>
+                            
+                                          <br\>
+                                          <h2 class="title">Directions</h2>
+                                          * Boil a large pot of salted water. <br>
+                                          * Add the green beans and cook until tender crisp, 1 to 2 minutes. <br>
+                                          *Use a spider to remove to a bowl of ice water. <br>
+                                          * Drain well, pat dry and place the beans in a large bowl. <br>
+                                          * Combine with the feta cheese, tomatoes and red onions. 
+                                          *Toast the almonds in a small skillet, 2 to 3 minutes. <br>
+                                          * Remove to a plate. <br>  
+                                          * Whisk together the olive oil, red wine vinegar, basil, garlic and some salt and pepper. <br>
+                                          * Pour the dressing over the green beans and sprinkle with the toasted almonds. <br>
+                                          * Let marinate in the refrigerator for 1 hour before serving.<br>
+                            
+                                        
+                                      </ion-card-content>  
+                                      </ion-card>
+
           </div>
 </ion-content>
