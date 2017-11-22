@@ -1,5 +1,5 @@
 page-food-recipes-home {
-   
+
 
   ion-card-content { font-family : Noto Sans; }
   ion-card-title {font-size:20em; }
@@ -52,5 +52,8 @@ page-food-recipes-home {
     margin-bottom: 0px !important;
   }
 
+  .card-md {
+    margin-bottom: 54px;
+  }
 
 }
