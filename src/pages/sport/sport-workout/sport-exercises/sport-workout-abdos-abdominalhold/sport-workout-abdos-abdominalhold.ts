@@ -2,7 +2,7 @@ import { Component } from '@angular/core';
 import { NavController } from 'ionic-angular';
 import {SportHomePage} from '../../../sport-home/sport-home';
 import { ToastController } from 'ionic-angular';
-
+import { SportWorkoutPage } from '../../sport-workout';
 
 @Component({
   selector: 'page-sport-workout-abdos-abdominalhold',
@@ -27,5 +27,6 @@ export class AbdominalHold {
       });
       toast.present();
     }
+    this.navCtrl.push(SportWorkoutPage);
   }
 }
