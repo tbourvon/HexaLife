@@ -18,7 +18,7 @@ export class OneArmSideLaterals {
     this.done=!this.done;
     if (this.done === true) {
       let toast = this.toastCtrl.create({
-        message: 'Congratulations! Your shoulder will be bigger than before !',
+        message: 'Congratulations! Your shoulders will be bigger than before !',
         duration: 3000
       });
       toast.present();

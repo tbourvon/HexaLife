@@ -19,7 +19,7 @@ export class BenchDips {
     this.done=!this.done;
     if (this.done === true) {
       let toast = this.toastCtrl.create({
-        message: 'Congratulations! Your arms are in fire !',
+        message: 'Congratulations! Your arms are on fire !',
         duration: 3000
       });
       toast.present();
