@@ -12,7 +12,6 @@ export class FoodStartersPage {
 	items = [
     {
         title: 'Mixed Salad',
-        number: 0,
         emojis: ['em em-watermelon', 'em em-watermelon', 'em em-watermelon'],
         calories : 50,
         fat: 10,
@@ -23,7 +22,6 @@ export class FoodStartersPage {
     },
     {
         title: 'Melon and Ham',
-        number: 0,
         emojis: ['em em-watermelon', 'em em-watermelon'],
         calories : 70,
         fat: 10,
@@ -34,7 +32,6 @@ export class FoodStartersPage {
     },
     {
         title: 'Quiche',
-        number: 0,
         emojis: ['em em-pizza'],
         calories : 100,
         fat: 10,
@@ -45,7 +42,6 @@ export class FoodStartersPage {
     },
     {
         title: 'Pizza',
-        number: 0,
         emojis: ['em em-pizza', 'em em-pizza'],
         calories : 160,
         fat: 10,
@@ -56,38 +52,30 @@ export class FoodStartersPage {
     }
 	];
 
-  //selectedStarters = [];
-
   constructor(public navCtrl: NavController, public alertCtrl: AlertController) {
 
   }
 
   itemSelected(item: string) {
-    this.navCtrl.push(FoodCoursesPage, { starters: item});
-  }
-
-  /*next() {
-    for (let item in this.items) {
-      if (item.number > 0) {
-        this.selectedStarters.push(item);
+    var calories;
+    var carbs;
+    var fat;
+    var proteins;
+    for (let itemSelected of this.items) {
+      if (itemSelected.title == item) {
+        calories = itemSelected.calories;
+        carbs = itemSelected.carbs;
+        fat = itemSelected.fat;
+        proteins = itemSelected.proteins;
       }
     }
-    this.navCtrl.push(FoodCoursesPage, { starters: this.selectedStarters });
-  }*/
-
-  /*public onInfoClick(event, index) {
-  		event.stopPropagation();
-        this.items[index].show = !this.items[index].show;
-  }*/
-/*
-  minus(item) {
-    console.log(item);
-
+    this.navCtrl.push(FoodCoursesPage, {
+      starters: item,
+      calories: calories,
+      carbs: carbs,
+      fat: fat,
+      proteins: proteins
+    });
   }
-
-  plus(item) {
-    item.number++;
-  }
-*/
 
 }

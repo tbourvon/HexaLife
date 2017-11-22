@@ -11,11 +11,19 @@ export class FoodRecapmenuPage {
     public starters;
     public courses;
     public desserts;
+    calories: any;
+    carbs: any;
+    fat: any;
+    proteins: any;
 
   constructor(public navCtrl: NavController, public navParams: NavParams, public alertCtrl: AlertController) {
     this.starters = this.navParams.get("starters");
     this.courses = this.navParams.get("courses");
     this.desserts = this.navParams.get("desserts");
+    this.calories = this.navParams.get("calories");
+    this.carbs = this.navParams.get("carbs");
+    this.fat = this.navParams.get("fat");
+    this.proteins = this.navParams.get("proteins");
   }
 
   valider() {
