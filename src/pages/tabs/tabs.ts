@@ -12,9 +12,9 @@ import { NavController } from 'ionic-angular';
 
 export class TabsPage {
 
-  tab1Root = SportHomePage;
-  tab2Root = FoodHomePage;
-  tab3Root = FeedPage;
+  tab1Root = FeedPage;
+  tab2Root = SportHomePage;
+  tab3Root = FoodHomePage;
   tab4Root = ProfilePageHome;
   constructor(public navCtrl: NavController) {}
 
