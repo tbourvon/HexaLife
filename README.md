@@ -1,4 +1,4 @@
-![alt text](https://image.noelshack.com/fichiers/2018/03/3/1516204840-iphone-6-isometric-view-mockup-copie-min.png)
+![alt text](https://image.noelshack.com/fichiers/2018/03/3/1516205826-iphone-6-isometric-view-mockup-copie-min.jpg)
 
 This is a starter template for [Ionic](http://ionicframework.com/docs/) projects.
 
