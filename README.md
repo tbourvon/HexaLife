@@ -26,3 +26,4 @@ $ ionic cordova run ios
 
 Substitute ios for android if not on a Mac.
 
+![alt text](https://image.noelshack.com/fichiers/2018/03/3/1516205917-app-screens-mock-up-perspective-iphone-6-copie-min.jpg)
